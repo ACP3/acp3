@@ -22,7 +22,7 @@ final class Migration202401062206 implements MigrationInterface
      */
     public function up(): void
     {
-        $this->db->executeStatement("INSERT INTO `{$this->db->getPrefixedTableName('acl_resources')}` (`id`, `module_id`, `area`, `controller`, `page`, `params`) VALUES (null, (SELECT `id` FROM `{$this->db->getPrefixedTableName('modules')}` WHERE `name` = 'filemanager'), 'admin', 'index', 'index', '');");
+        $this->db->executeStatement("INSERT INTO `{$this->db->getPrefixedTableName('acl_resources')}` (`module_id`, `area`, `controller`, `page`, `params`) VALUES ((SELECT `id` FROM `{$this->db->getPrefixedTableName('modules')}` WHERE `name` = 'filemanager'), 'admin', 'index', 'index', '');");
     }
 
     public function down(): void
