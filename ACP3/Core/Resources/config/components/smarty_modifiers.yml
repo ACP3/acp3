@@ -10,6 +10,10 @@ services:
     tags:
       - { name: smarty.plugin.modifier, pluginName: decorate }
 
+  ACP3\Core\View\Renderer\Smarty\Modifiers\Count:
+    tags:
+      - { name: smarty.plugin.modifier, pluginName: count }
+
   ACP3\Core\View\Renderer\Smarty\Modifiers\JsonEncode:
     tags:
       - { name: smarty.plugin.modifier, pluginName: json_encode }
