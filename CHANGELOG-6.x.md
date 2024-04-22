@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [unreleased]
 
-tba
+### Fixed
+
+-   [Filemanager] Fix a faulty DB migration file
 
 ## [6.28.0] - 2024-03-16
 
