@@ -7,7 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [unreleased]
 
-tba
+### Fixed
+
+-   [Core] Add a "count"-modifier to Smarty to fix a deprecation notice
+-   [Guestbook] Fix the code style
 
 ## [6.28.1] - 2024-04-22
 
