@@ -12,9 +12,6 @@
   },
   "homepage": "https://www.acp3-cms.net",
   "private": true,
-  "scripts": {},
-  "devDependencies": {},
-  "dependencies": {},
   "browserslist": ["defaults and >= 1%", "Firefox ESR"],
   "lint-staged": {
     "!(*.min).{js,cjs,mjs}": "npm run eslint:fix",

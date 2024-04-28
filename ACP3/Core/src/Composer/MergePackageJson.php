@@ -43,22 +43,17 @@ class MergePackageJson
         );
 
         $result = $basePackageJson;
+        $result['workspaces'] = [];
         foreach (ComponentRegistry::allTopSorted() as $component) {
             $path = $component->getPath() . '/package.json';
             if (!is_file($path)) {
                 continue;
             }
 
+            $result['workspaces'][] = substr(\dirname($path), \strlen($homeDir) + 1);
+
             $json = json_decode(file_get_contents($path), true, 512, JSON_THROW_ON_ERROR);
 
-            if (isset($json['dependencies'])) {
-                $result['dependencies'] = array_merge($result['dependencies'] ?? [], $json['dependencies']);
-                ksort($result['dependencies']);
-            }
-            if (isset($json['devDependencies'])) {
-                $result['devDependencies'] = array_merge($result['devDependencies'] ?? [], $json['devDependencies']);
-                ksort($result['devDependencies']);
-            }
             if (isset($json['scripts'])) {
                 $result['scripts'] = array_merge($result['scripts'] ?? [], $json['scripts']);
                 ksort($result['scripts']);
