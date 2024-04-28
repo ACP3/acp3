@@ -7,7 +7,7 @@
             <article class="card mb-3">
                 <header class="card-header d-flex justify-content-between align-items-center">
                     <strong>
-                        {if !is_null($row.user_id)}
+                        {if $row.user_id !== null}
                             <a href="{uri args="users/index/view_profile/id_`$row.user_id`"}"
                                title="{lang t="users|view_profile"}">
                                 {$row.name}
