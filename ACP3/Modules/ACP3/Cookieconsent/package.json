@@ -13,6 +13,6 @@
   "homepage": "https://www.acp3-cms.net",
   "private": true,
   "dependencies": {
-    "klaro": "^0.7.18"
+    "klaro": "^0.7.21"
   }
 }
