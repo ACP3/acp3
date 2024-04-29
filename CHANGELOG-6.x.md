@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [unreleased]
 
-tba
+### Fixed
+
+-   [System] Updated the husky integration
 
 ## [6.29.0] - 2024-04-29
 
