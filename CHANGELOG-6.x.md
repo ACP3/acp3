@@ -7,7 +7,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [unreleased]
 
-tba
+### Changed
+
+-   [Base] [Core] Changed, how the `package.json` gets generated. We're now internally using NPM's workspaces features
+-   [ALL] Updated the composer dependencies
+-   [ALL] Updated the NPM dependencies
+
+### Fixed
+
+-   [Core] Fixed one more deprecation notices issued by recent Smarty versions
 
 ## [6.28.2] - 2024-04-22
 
