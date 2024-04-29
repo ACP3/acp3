@@ -10,7 +10,7 @@
     "prettier": "prettier --check --cache **/*.{js,cjs,mjs,json,md,yml}",
     "prettier:fix": "prettier --write --cache **/*.{js,cjs,mjs,json,md,yml}",
     "lint-all": "concurrently \"npm:prettier:fix\" \"npm:css-lint:fix\" \"npm:eslint:fix\" --kill-others-on-fail --group",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
