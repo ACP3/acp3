@@ -39,7 +39,7 @@
     "eslint": "eslint -c .eslintrc.json --cache --cache-location=.eslintcache .",
     "eslint:fix": "npm run eslint -- --fix",
     "lint-all": "concurrently \"npm:prettier:fix\" \"npm:css-lint:fix\" \"npm:eslint:fix\" --kill-others-on-fail --group",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prettier": "prettier --check --cache **/*.{js,cjs,mjs,json,md,yml}",
     "prettier:fix": "prettier --write --cache **/*.{js,cjs,mjs,json,md,yml}"
   }
