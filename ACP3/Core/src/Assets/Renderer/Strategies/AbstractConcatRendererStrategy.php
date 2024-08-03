@@ -132,7 +132,7 @@ abstract class AbstractConcatRendererStrategy implements RendererStrategyInterfa
     {
         $concurrentDirectory = $this->appPath->getUploadsDir() . 'assets';
         if (!is_dir($concurrentDirectory) && !mkdir($concurrentDirectory, 0755) && !is_dir($concurrentDirectory)) {
-            throw new \RuntimeException(sprintf('Directory "%s" was not created', $concurrentDirectory));
+            throw new \RuntimeException(\sprintf('Directory "%s" was not created', $concurrentDirectory));
         }
     }
 }

@@ -28,7 +28,7 @@ abstract class AbstractSearchAvailabilityExtension implements SearchAvailability
         );
 
         foreach ($results as $i => $iValue) {
-            $results[$i]['hyperlink'] = $this->router->route(sprintf($this->getRouteName(), $iValue['id']));
+            $results[$i]['hyperlink'] = $this->router->route(\sprintf($this->getRouteName(), $iValue['id']));
             $results[$i]['text'] = $this->view->fetchStringAsTemplate($results[$i]['text']);
         }
 

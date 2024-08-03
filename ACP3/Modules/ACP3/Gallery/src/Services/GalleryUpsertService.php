@@ -29,7 +29,7 @@ class GalleryUpsertService
     public function upsert(array $updatedData, ?int $galleryId = null): int
     {
         $this->galleryFormValidation
-            ->withUriAlias($galleryId === null ? '' : sprintf(Helpers::URL_KEY_PATTERN_GALLERY, $galleryId))
+            ->withUriAlias($galleryId === null ? '' : \sprintf(Helpers::URL_KEY_PATTERN_GALLERY, $galleryId))
             ->validate($updatedData);
 
         $updatedData['user_id'] = $this->userModel->getUserId();

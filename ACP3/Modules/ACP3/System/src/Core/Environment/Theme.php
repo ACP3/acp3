@@ -67,7 +67,7 @@ class Theme implements ThemePathInterface
         $content = file_get_contents($path);
 
         if (!$content) {
-            throw new \RuntimeException(sprintf('Could not load file "%s"!', $path));
+            throw new \RuntimeException(\sprintf('Could not load file "%s"!', $path));
         }
 
         $composerData = json_decode($content, true, 512, JSON_THROW_ON_ERROR);

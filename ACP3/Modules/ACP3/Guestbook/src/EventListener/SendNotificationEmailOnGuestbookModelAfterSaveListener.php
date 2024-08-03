@@ -31,7 +31,7 @@ class SendNotificationEmailOnGuestbookModelAfterSaveListener implements EventSub
         $guestbookSettings = $this->settings->getSettings(Schema::MODULE_NAME);
 
         $fullPath = $this->router->route('guestbook', true) . '#gb-entry-' . $event->getEntryId();
-        $body = sprintf(
+        $body = \sprintf(
             $guestbookSettings['notify'] == 1
                 ? $this->translator->t('guestbook', 'notification_email_body_1')
                 : $this->translator->t('guestbook', 'notification_email_body_2'),

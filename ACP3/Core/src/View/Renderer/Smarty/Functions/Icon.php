@@ -24,6 +24,6 @@ class Icon extends AbstractFunction
             return ($this->iconHelper)($iconSet, $icon, $params);
         }
 
-        throw new \InvalidArgumentException(sprintf('Not all necessary arguments for the function %s were passed!', __FUNCTION__));
+        throw new \InvalidArgumentException(\sprintf('Not all necessary arguments for the function %s were passed!', __FUNCTION__));
     }
 }

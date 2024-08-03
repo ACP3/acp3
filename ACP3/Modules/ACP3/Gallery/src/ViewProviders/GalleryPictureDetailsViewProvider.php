@@ -77,12 +77,12 @@ class GalleryPictureDetailsViewProvider
 
         if (!empty($previousPicture)) {
             $this->metaStatements->setPreviousPage(
-                $this->router->route(sprintf(GalleryHelpers::URL_KEY_PATTERN_PICTURE, $previousPicture))
+                $this->router->route(\sprintf(GalleryHelpers::URL_KEY_PATTERN_PICTURE, $previousPicture))
             );
         }
         if (!empty($nextPicture)) {
             $this->metaStatements->setNextPage(
-                $this->router->route(sprintf(GalleryHelpers::URL_KEY_PATTERN_PICTURE, $nextPicture))
+                $this->router->route(\sprintf(GalleryHelpers::URL_KEY_PATTERN_PICTURE, $nextPicture))
             );
         }
     }

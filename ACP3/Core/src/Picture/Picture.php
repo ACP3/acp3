@@ -44,7 +44,7 @@ class Picture
     public function process(Input $input): Output
     {
         if (is_file($input->getFile()) === false) {
-            throw new PictureGenerateException(sprintf('Could not find picture: %s', $input->getFile()));
+            throw new PictureGenerateException(\sprintf('Could not find picture: %s', $input->getFile()));
         }
 
         $cacheFile = $input->getCacheFileName();
@@ -85,7 +85,7 @@ class Picture
             $info = getimagesize($fileName);
 
             if ($info === false) {
-                throw new PictureGenerateException(sprintf('Could not get image size information for picture <%s>!', $fileName));
+                throw new PictureGenerateException(\sprintf('Could not get image size information for picture <%s>!', $fileName));
             }
 
             $picInfo = [
@@ -142,7 +142,7 @@ class Picture
         }
 
         if (!@mkdir($concurrentDirectory = $input->getCacheDir()) && !is_dir($concurrentDirectory)) {
-            throw new CacheDirectoryCreationException(sprintf('Could not create cache dir: %s', $input->getCacheDir()));
+            throw new CacheDirectoryCreationException(\sprintf('Could not create cache dir: %s', $input->getCacheDir()));
         }
     }
 
@@ -154,7 +154,7 @@ class Picture
     private function resample(Input $input, Output $output): void
     {
         if (!\array_key_exists($output->getType(), $this->strategies)) {
-            throw new UnsupportedPictureTypeException(sprintf('Could not resize the picture %s, as it is using an unsupported file type!', $input->getFile()));
+            throw new UnsupportedPictureTypeException(\sprintf('Could not resize the picture %s, as it is using an unsupported file type!', $input->getFile()));
         }
 
         $this->strategies[$output->getType()]->resize($input, $output);

@@ -31,7 +31,7 @@ class CachingGalleryService implements GalleryServiceInterface
      */
     public function getGalleryPictures(int $galleryId): array
     {
-        $cacheKey = sprintf(self::CACHE_ID_GALLERY_PICTURES, $galleryId);
+        $cacheKey = \sprintf(self::CACHE_ID_GALLERY_PICTURES, $galleryId);
         $cacheItem = $this->galleryCachePool->getItem($cacheKey);
 
         if (!$cacheItem->isHit()) {

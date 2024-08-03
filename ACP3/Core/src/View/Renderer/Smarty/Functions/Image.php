@@ -28,6 +28,6 @@ class Image extends AbstractFunction
             return $path;
         }
 
-        throw new \InvalidArgumentException(sprintf('Not all necessary arguments for the function %s were passed!', __FUNCTION__));
+        throw new \InvalidArgumentException(\sprintf('Not all necessary arguments for the function %s were passed!', __FUNCTION__));
     }
 }

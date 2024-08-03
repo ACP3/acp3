@@ -33,7 +33,7 @@ class NewsUpsertService
     public function upsert(array $updatedData, ?int $newsId = null): int
     {
         $this->adminFormValidation
-            ->withUriAlias($newsId !== null ? sprintf(Helpers::URL_KEY_PATTERN, $newsId) : '')
+            ->withUriAlias($newsId !== null ? \sprintf(Helpers::URL_KEY_PATTERN, $newsId) : '')
             ->validate($updatedData);
 
         $updatedData['cat'] = !empty($updatedData['cat_create'])

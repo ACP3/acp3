@@ -139,7 +139,7 @@ class AdminRoleEditViewProvider
 
     private function localizeInheritedPermission(PermissionEnum $permissionValue): string
     {
-        return sprintf(
+        return \sprintf(
             $this->translator->t('permissions', 'calculated_permission'),
             $this->translator->t(
                 'permissions',

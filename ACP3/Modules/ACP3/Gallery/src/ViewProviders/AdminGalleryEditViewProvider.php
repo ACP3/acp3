@@ -33,7 +33,7 @@ class AdminGalleryEditViewProvider
             'form' => array_merge($gallery, $this->request->getPost()->all()),
             'form_token' => $this->formTokenHelper->renderFormToken(),
             'SEO_URI_PATTERN' => GalleryHelpers::URL_KEY_PATTERN_GALLERY,
-            'SEO_ROUTE_NAME' => !empty($gallery['id']) ? sprintf(GalleryHelpers::URL_KEY_PATTERN_GALLERY, $gallery['id']) : '',
+            'SEO_ROUTE_NAME' => !empty($gallery['id']) ? \sprintf(GalleryHelpers::URL_KEY_PATTERN_GALLERY, $gallery['id']) : '',
         ];
     }
 }

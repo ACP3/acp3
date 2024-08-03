@@ -136,7 +136,7 @@ class Modules extends Core\Controller\AbstractWidgetAction
 
         try {
             if ($this->modules->isInstalled($moduleDirectory) === false) {
-                throw new ModuleInstallerException(sprintf($this->translator->t('system', 'module_not_installed'), $moduleDirectory));
+                throw new ModuleInstallerException(\sprintf($this->translator->t('system', 'module_not_installed'), $moduleDirectory));
             }
 
             $this->moduleInstallerExists($moduleDirectory);

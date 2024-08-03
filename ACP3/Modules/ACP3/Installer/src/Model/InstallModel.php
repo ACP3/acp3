@@ -78,7 +78,7 @@ class InstallModel
 
         foreach ($schemaRegistrar->all() as $schema) {
             if ($this->installHelper->installResources($schema, $this->container) === false) {
-                throw new ModuleMigrationException(sprintf('Error while installing ACL resources for the module %s.', $schema->getModuleName()));
+                throw new ModuleMigrationException(\sprintf('Error while installing ACL resources for the module %s.', $schema->getModuleName()));
             }
         }
     }
@@ -157,7 +157,7 @@ class InstallModel
                     $schemaHelper
                 );
             } catch (\Throwable $e) {
-                throw new ModuleMigrationException(sprintf('Error while installing module sample data of serviceId "%s".', $serviceId), 0, $e);
+                throw new ModuleMigrationException(\sprintf('Error while installing module sample data of serviceId "%s".', $serviceId), 0, $e);
             }
         }
     }

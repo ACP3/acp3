@@ -58,7 +58,7 @@ class ModuleInstaller
         $installedModules = [];
         foreach ($installableModules as $module) {
             if ($this->installHelper->installModule($schemaRegistrar->get($module->getName()), $container) === false) {
-                throw new ModuleInstallerException(sprintf('Error while installing module "%s"', $module->getName()));
+                throw new ModuleInstallerException(\sprintf('Error while installing module "%s"', $module->getName()));
             }
 
             $installedModules[$module->getName()] = true;

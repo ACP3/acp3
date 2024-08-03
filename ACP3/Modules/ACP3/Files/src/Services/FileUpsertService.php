@@ -37,7 +37,7 @@ class FileUpsertService
     {
         $this->adminFormValidation
             ->withFile($file)
-            ->withUriAlias($downloadId !== null ? sprintf(Helpers::URL_KEY_PATTERN, $downloadId) : '')
+            ->withUriAlias($downloadId !== null ? \sprintf(Helpers::URL_KEY_PATTERN, $downloadId) : '')
             ->validate($updatedData);
 
         $updatedData['user_id'] = $this->user->getUserId();

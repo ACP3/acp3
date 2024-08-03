@@ -24,13 +24,13 @@ class SortColumnRenderer extends AbstractColumnRenderer
         $value = '';
         if ($dbResultRow['last'] != $dbValue) {
             $value .= $this->fetchSortDirectionHtml(
-                $this->router->route(sprintf($column['custom']['route_sort_down'], $dbResultRow[$this->getPrimaryKey()])),
+                $this->router->route(\sprintf($column['custom']['route_sort_down'], $dbResultRow[$this->getPrimaryKey()])),
                 'down'
             );
         }
         if ($dbResultRow['first'] != $dbValue) {
             $value .= $this->fetchSortDirectionHtml(
-                $this->router->route(sprintf($column['custom']['route_sort_up'], $dbResultRow[$this->getPrimaryKey()])),
+                $this->router->route(\sprintf($column['custom']['route_sort_up'], $dbResultRow[$this->getPrimaryKey()])),
                 'up'
             );
         }
@@ -66,7 +66,7 @@ class SortColumnRenderer extends AbstractColumnRenderer
 </a>
 HTML;
 
-        return sprintf(
+        return \sprintf(
             $html,
             $url,
             $this->translator->t('system', 'move_' . $direction),
@@ -81,7 +81,7 @@ HTML;
     {
         $html = ($this->icon)('solid', 'circle-xmark', ['cssSelectors' => 'text-danger', 'title' => $this->translator->t('system', 'move_impossible')]);
 
-        return '<span class="btn btn-light btn-sm disabled">' . sprintf($html, $this->translator->t('system', 'move_impossible')) . '</span>';
+        return '<span class="btn btn-light btn-sm disabled">' . \sprintf($html, $this->translator->t('system', 'move_impossible')) . '</span>';
     }
 
     public static function mandatoryAttributes(): array

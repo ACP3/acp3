@@ -40,7 +40,7 @@ abstract class AbstractIncludeAsset
 
         $this->alreadyIncluded[$key] = true;
 
-        return sprintf(
+        return \sprintf(
             $this->getHtmlTag(),
             $this->resolvePath($moduleName, $filePath)
         );
@@ -61,7 +61,7 @@ abstract class AbstractIncludeAsset
         );
 
         if (!$path) {
-            throw new \RuntimeException(sprintf('Could not find the requested file %s of module %s!', $filePath, $moduleName));
+            throw new \RuntimeException(\sprintf('Could not find the requested file %s of module %s!', $filePath, $moduleName));
         }
 
         return $path;

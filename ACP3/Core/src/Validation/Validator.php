@@ -120,7 +120,7 @@ class Validator
 
         foreach ($this->constraints as $constraint) {
             if (!$this->container->has($constraint['rule'])) {
-                throw new ValidationRuleNotFoundException(sprintf($this->getExceptionMessage(), $constraint['rule']));
+                throw new ValidationRuleNotFoundException(\sprintf($this->getExceptionMessage(), $constraint['rule']));
             }
 
             /** @var ValidationRuleInterface $validationRule */
@@ -167,6 +167,6 @@ class Validator
             return $this->container->get($validationRule)->isValid($field);
         }
 
-        throw new ValidationRuleNotFoundException(sprintf($this->getExceptionMessage(), $validationRule));
+        throw new ValidationRuleNotFoundException(\sprintf($this->getExceptionMessage(), $validationRule));
     }
 }

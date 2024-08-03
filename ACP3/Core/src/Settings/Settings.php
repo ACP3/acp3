@@ -33,7 +33,7 @@ class Settings implements SettingsInterface
         $moduleId = $this->systemModuleRepository->getModuleId($moduleName);
 
         if (empty($moduleId)) {
-            throw new \InvalidArgumentException(sprintf('The module "%s" is not installed.', $moduleName));
+            throw new \InvalidArgumentException(\sprintf('The module "%s" is not installed.', $moduleName));
         }
 
         $settingsSaveEvent = new SettingsSaveEvent($moduleName, $data);

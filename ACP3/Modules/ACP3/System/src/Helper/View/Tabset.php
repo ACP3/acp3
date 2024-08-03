@@ -33,7 +33,7 @@ class Tabset
     public function getTabset(string $identifier): array
     {
         if (!\array_key_exists($identifier, $this->tabsets)) {
-            throw new InvalidTabsetException(sprintf('Could not find tabset with the identifier "%s"!', $identifier));
+            throw new InvalidTabsetException(\sprintf('Could not find tabset with the identifier "%s"!', $identifier));
         }
 
         return $this->tabsets[$identifier];

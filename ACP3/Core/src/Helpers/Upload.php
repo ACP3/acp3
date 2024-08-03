@@ -34,7 +34,7 @@ class Upload
             $result = @mkdir($path);
 
             if (!$result) {
-                throw new ValidationFailedException([sprintf('Could not create folder "%s"', $this->directory)]);
+                throw new ValidationFailedException([\sprintf('Could not create folder "%s"', $this->directory)]);
             }
         }
 

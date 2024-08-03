@@ -22,12 +22,12 @@ class RouteColumnRenderer extends AbstractColumnRenderer
         $value = parent::getValue($column, $dbResultRow);
 
         if (!empty($column['custom']['path'])) {
-            $route = $this->router->route(sprintf($column['custom']['path'], $value));
+            $route = $this->router->route(\sprintf($column['custom']['path'], $value));
             $linkIcon = ($this->icon)('solid', 'link');
             $pattern = <<<HTML
 <a href="%s" target="_blank" title="%s">%s <small>$linkIcon</small></a>
 HTML;
-            $value = sprintf(
+            $value = \sprintf(
                 $pattern,
                 $route,
                 $this->translator->t('system', 'open_in_new_window'),

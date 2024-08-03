@@ -58,16 +58,16 @@ class Sort
             $query = 'SELECT a.%2$s AS other_id FROM %1$s AS a, %1$s AS b WHERE %4$sb.%2$s = :id AND a.%3$s %5$s b.%3$s ORDER BY a.%3$s %6$s LIMIT 1';
 
             if ($action === 'up') {
-                $otherId = $this->db->getConnection()->fetchOne(sprintf($query, $table, $idField, $sortField, $where, '<', 'DESC'), ['id' => $id]);
+                $otherId = $this->db->getConnection()->fetchOne(\sprintf($query, $table, $idField, $sortField, $where, '<', 'DESC'), ['id' => $id]);
             } else {
-                $otherId = $this->db->getConnection()->fetchOne(sprintf($query, $table, $idField, $sortField, $where, '>', 'ASC'), ['id' => $id]);
+                $otherId = $this->db->getConnection()->fetchOne(\sprintf($query, $table, $idField, $sortField, $where, '>', 'ASC'), ['id' => $id]);
             }
 
             if ($otherId !== null) {
                 $swapSortSql = 'UPDATE %1$s t1 INNER JOIN %1$s t2 ON (t1.%2$s, t2.%2$s) IN ((:id, :otherId),(:otherId,:id)) SET t1.%3$s = t2.%3$s';
 
                 $this->db->getConnection()->executeStatement(
-                    sprintf($swapSortSql, $table, $idField, $sortField), ['id' => $id, 'otherId' => $otherId]
+                    \sprintf($swapSortSql, $table, $idField, $sortField), ['id' => $id, 'otherId' => $otherId]
                 );
 
                 $this->db->commit();

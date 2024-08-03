@@ -1404,7 +1404,7 @@ class BaseUploadHandler
         if ($print_response) {
             $redirect = stripslashes($this->get_post_param('redirect'));
             if ($redirect && preg_match($this->options['redirect_allow_target'], $redirect)) {
-                $this->header('Location: ' . sprintf($redirect, rawurlencode($json)));
+                $this->header('Location: ' . \sprintf($redirect, rawurlencode($json)));
 
                 return;
             }

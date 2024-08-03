@@ -40,6 +40,6 @@ class SchemaRegistrar implements ContainerInterface
             return $this->schemas[$moduleName];
         }
 
-        throw new \InvalidArgumentException(sprintf('The schema with the service id "%s" could not be found.', $moduleName));
+        throw new \InvalidArgumentException(\sprintf('The schema with the service id "%s" could not be found.', $moduleName));
     }
 }

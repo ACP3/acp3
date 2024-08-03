@@ -127,7 +127,7 @@ class Storage extends BaseStorage
             Log::info('creating "' . $this->storageRoot . '" root folder');
 
             if (!mkdir($concurrentDirectory = $this->storageRoot, $this->config('mkdir_mode'), true) && !is_dir($concurrentDirectory)) {
-                throw new \RuntimeException(sprintf('Directory "%s" was not created', $concurrentDirectory));
+                throw new \RuntimeException(\sprintf('Directory "%s" was not created', $concurrentDirectory));
             }
         }
     }
@@ -505,7 +505,7 @@ class Storage extends BaseStorage
         fclose($fp);
 
         if (!($flockResult === false || $seekResult !== 0 || $position === false)) {
-            return sprintf('%u', $position);
+            return \sprintf('%u', $position);
         }
 
         // Try to define file size via CURL if installed

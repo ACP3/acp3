@@ -41,7 +41,7 @@ class OnModelDeleteAfterListener implements EventSubscriberInterface
                 continue;
             }
 
-            $route = sprintf(
+            $route = \sprintf(
                 $this->routePathPatterns->getRoutePathPattern($event->getTableName()),
                 $articleId
             );

@@ -17,7 +17,7 @@ class RoutePathPatterns
     public function addRoutePathPattern(string $tableName, string $routePathPattern): void
     {
         if (\array_key_exists($tableName, $this->routePathPatterns)) {
-            throw new \RuntimeException(sprintf('Route-Path-Pattern for table name "%s" already defined.', $tableName));
+            throw new \RuntimeException(\sprintf('Route-Path-Pattern for table name "%s" already defined.', $tableName));
         }
 
         $this->routePathPatterns[$tableName] = $routePathPattern;

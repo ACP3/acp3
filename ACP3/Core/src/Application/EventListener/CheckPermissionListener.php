@@ -31,7 +31,7 @@ class CheckPermissionListener implements EventSubscriberInterface
         $path = $event->getArea()->value . '/' . $event->getModule() . '/' . $event->getController() . '/' . $event->getControllerAction();
 
         if ($this->acl->hasPermission($path) === false) {
-            throw new AccessForbiddenException(sprintf('Access forbidden for controller action "%s"', $path));
+            throw new AccessForbiddenException(\sprintf('Access forbidden for controller action "%s"', $path));
         }
     }
 

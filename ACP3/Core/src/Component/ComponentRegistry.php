@@ -124,7 +124,7 @@ class ComponentRegistry
         $component = self::findByName($componentName);
 
         if ($component === null) {
-            throw new ComponentNotFoundException(sprintf('Could not find the component with name "%s".', $componentName));
+            throw new ComponentNotFoundException(\sprintf('Could not find the component with name "%s".', $componentName));
         }
 
         return $component->getPath();

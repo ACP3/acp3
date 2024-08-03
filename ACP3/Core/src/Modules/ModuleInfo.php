@@ -60,7 +60,7 @@ class ModuleInfo implements ModuleInfoInterface
         $fileContents = file_get_contents($path);
 
         if ($fileContents === false) {
-            throw new \RuntimeException(sprintf('An error occurred while reading file "%s"!', $path));
+            throw new \RuntimeException(\sprintf('An error occurred while reading file "%s"!', $path));
         }
         $composerData = json_decode($fileContents, true, 512, JSON_THROW_ON_ERROR);
 

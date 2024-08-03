@@ -27,7 +27,7 @@ abstract class AbstractPictureResizeStrategy implements PictureResizeStrategyInt
         );
 
         if (!$result) {
-            throw new \RuntimeException(sprintf('Could not resize image %s', $output->getSrcFile()));
+            throw new \RuntimeException(\sprintf('Could not resize image %s', $output->getSrcFile()));
         }
     }
 }

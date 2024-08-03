@@ -105,7 +105,7 @@ class Navbar extends AbstractFunction
         }
 
         if (!empty($this->menus[$cacheKey])) {
-            $this->menus[$cacheKey] = sprintf(
+            $this->menus[$cacheKey] = \sprintf(
                 '<%1$s%2$s>%3$s</%1$s>',
                 $menuConfig->getTag(),
                 $this->prepareMenuHtmlAttributes($menu, $menuConfig),
@@ -148,13 +148,13 @@ class Navbar extends AbstractFunction
         $pageType = PageTypeEnum::from($item['mode']);
 
         if ($pageType === PageTypeEnum::HEADLINE) {
-            $elem = sprintf(
+            $elem = \sprintf(
                 '<span%1$s>%2$s</span>',
                 $this->prepareMenuItemHtmlAttributes($menuConfig, $item, $isSelected),
                 $item['title']
             );
         } else {
-            $elem = sprintf(
+            $elem = \sprintf(
                 '<a href="%1$s"%2$s%3$s>%4$s</a>',
                 $this->getMenuItemHref($pageType, $item['uri']),
                 $this->getMenuItemHrefTarget(LinkTargetEnum::tryFrom($item['target'])),
@@ -167,7 +167,7 @@ class Navbar extends AbstractFunction
             return $elem;
         }
 
-        return sprintf('<%1$s class="%2$s">%3$s</%1$s>', $menuConfig->getItemTag(), $cssSelectors, $elem);
+        return \sprintf('<%1$s class="%2$s">%3$s</%1$s>', $menuConfig->getItemTag(), $cssSelectors, $elem);
     }
 
     /**
@@ -181,7 +181,7 @@ class Navbar extends AbstractFunction
         if ($pageType === PageTypeEnum::HEADLINE) {
             $attributes = $this->prepareMenuItemHtmlAttributes($menuConfig, $item, $isSelected);
 
-            $elem = sprintf(
+            $elem = \sprintf(
                 '<span%1$s>%2$s</span>',
                 $attributes,
                 $item['title']
@@ -202,7 +202,7 @@ class Navbar extends AbstractFunction
                 $subNavigationCssClasses[] = 'dropdown-menu';
             }
 
-            $elem = sprintf(
+            $elem = \sprintf(
                 '<a href="%1$s"%2$s%3$s>%4$s</a>',
                 $this->getMenuItemHref($pageType, $item['uri']),
                 $this->getMenuItemHrefTarget(LinkTargetEnum::tryFrom($item['target'])),
@@ -211,7 +211,7 @@ class Navbar extends AbstractFunction
             );
         }
 
-        return sprintf(
+        return \sprintf(
             '<%1$s class="%2$s">%3$s<ul class="%4$s">',
             $menuConfig->getDropdownWrapperTag(),
             $cssSelectors,

@@ -76,7 +76,7 @@ class Dictionary implements DictionaryInterface
         $fileContent = file_get_contents($i18nFile);
 
         if ($fileContent === false) {
-            throw new \RuntimeException(sprintf('An error occurred while loading file "%s"!', $i18nFile));
+            throw new \RuntimeException(\sprintf('An error occurred while loading file "%s"!', $i18nFile));
         }
 
         $xml = simplexml_load_string($fileContent);

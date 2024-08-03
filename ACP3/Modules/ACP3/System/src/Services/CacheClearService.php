@@ -90,7 +90,7 @@ class CacheClearService
     public function clearCacheByType(string $cacheType): void
     {
         if (!$this->isSupportedCacheType($cacheType)) {
-            throw new InvalidCacheTypeException(sprintf('The given cache type "%s" is not supported!', $cacheType));
+            throw new InvalidCacheTypeException(\sprintf('The given cache type "%s" is not supported!', $cacheType));
         }
 
         $cacheTypeData = $this->getCacheTypes()[$cacheType];
@@ -98,7 +98,7 @@ class CacheClearService
         if (\is_callable($cacheTypeData['paths'])) {
             $cacheTypeData['paths']();
         } elseif (!Purge::doPurge($cacheTypeData['paths'])) {
-            throw new CacheClearException(sprintf('An error occurred while clearing the cache for type "%s".', $cacheType));
+            throw new CacheClearException(\sprintf('An error occurred while clearing the cache for type "%s".', $cacheType));
         }
 
         if (\array_key_exists('dependency', $cacheTypeData) && \is_string($cacheTypeData['dependency'])) {

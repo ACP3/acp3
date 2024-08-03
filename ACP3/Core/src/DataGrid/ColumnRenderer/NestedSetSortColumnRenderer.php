@@ -17,13 +17,13 @@ class NestedSetSortColumnRenderer extends SortColumnRenderer
         } else {
             if ((bool) $dbResultRow['last'] === false) {
                 $value .= $this->fetchSortDirectionHtml(
-                    $this->router->route(sprintf($column['custom']['route_sort_down'], $dbResultRow[$this->getPrimaryKey()])),
+                    $this->router->route(\sprintf($column['custom']['route_sort_down'], $dbResultRow[$this->getPrimaryKey()])),
                     'down'
                 );
             }
             if ((bool) $dbResultRow['first'] === false) {
                 $value .= $this->fetchSortDirectionHtml(
-                    $this->router->route(sprintf($column['custom']['route_sort_up'], $dbResultRow[$this->getPrimaryKey()])),
+                    $this->router->route(\sprintf($column['custom']['route_sort_up'], $dbResultRow[$this->getPrimaryKey()])),
                     'up'
                 );
             }

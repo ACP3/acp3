@@ -62,14 +62,14 @@ class SchemaHelper
             foreach ($queries as $query) {
                 if (\is_callable($query)) {
                     if ($query() === false) {
-                        throw new Exception\ModuleMigrationException(sprintf('An error occurred while executing a migration inside a closure for module "%s"', $moduleName));
+                        throw new Exception\ModuleMigrationException(\sprintf('An error occurred while executing a migration inside a closure for module "%s"', $moduleName));
                     }
                 } elseif (!empty($query)) {
                     $this->db->executeStatement(str_ireplace($search, $replace, $query));
                 }
             }
         } catch (\Exception $e) {
-            throw new Exception\ModuleMigrationException(sprintf('An error occurred while executing a migration for module "%s"', $moduleName), 0, $e);
+            throw new Exception\ModuleMigrationException(\sprintf('An error occurred while executing a migration for module "%s"', $moduleName), 0, $e);
         }
     }
 

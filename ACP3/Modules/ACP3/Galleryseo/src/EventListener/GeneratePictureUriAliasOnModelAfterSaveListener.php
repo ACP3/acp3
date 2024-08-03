@@ -40,24 +40,24 @@ class GeneratePictureUriAliasOnModelAfterSaveListener implements EventSubscriber
         $pictureId = $event->getEntryId();
 
         $galleryId = $this->pictureRepository->getGalleryIdFromPictureId($pictureId);
-        $alias = $this->aliases->getUriAlias(sprintf(Helpers::URL_KEY_PATTERN_GALLERY, $galleryId), true);
+        $alias = $this->aliases->getUriAlias(\sprintf(Helpers::URL_KEY_PATTERN_GALLERY, $galleryId), true);
         if (!empty($alias)) {
             $alias .= '/img-' . $pictureId;
         }
         $seoKeywords = $this->metaStatements->getKeywords(
-            sprintf(Helpers::URL_KEY_PATTERN_GALLERY, $galleryId)
+            \sprintf(Helpers::URL_KEY_PATTERN_GALLERY, $galleryId)
         );
         $seoDescription = $this->metaStatements->getDescription(
-            sprintf(Helpers::URL_KEY_PATTERN_GALLERY, $galleryId)
+            \sprintf(Helpers::URL_KEY_PATTERN_GALLERY, $galleryId)
         );
         $seoRobots = $this->metaStatements->getRobotsSetting(
-            sprintf(Helpers::URL_KEY_PATTERN_GALLERY, $galleryId)
+            \sprintf(Helpers::URL_KEY_PATTERN_GALLERY, $galleryId)
         );
 
         $robotsSetting = array_flip($this->metaStatements->getRobotsMap());
 
         $this->uriAliasManager->insertUriAlias(
-            sprintf(Helpers::URL_KEY_PATTERN_PICTURE, $pictureId),
+            \sprintf(Helpers::URL_KEY_PATTERN_PICTURE, $pictureId),
             $alias,
             $seoKeywords,
             $seoDescription,

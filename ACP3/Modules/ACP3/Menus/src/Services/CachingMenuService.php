@@ -38,7 +38,7 @@ class CachingMenuService implements MenuServiceInterface
      */
     public function getVisibleMenuItemsByMenu(string $menuIdentifier): array
     {
-        $cacheKey = sprintf(self::CACHE_KEY_VISIBLE_MENU_ITEMS, $menuIdentifier);
+        $cacheKey = \sprintf(self::CACHE_KEY_VISIBLE_MENU_ITEMS, $menuIdentifier);
         $cacheItem = $this->menusCachePool->getItem($cacheKey);
 
         if (!$cacheItem->isHit()) {

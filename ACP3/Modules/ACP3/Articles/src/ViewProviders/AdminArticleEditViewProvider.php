@@ -40,7 +40,7 @@ class AdminArticleEditViewProvider
             ),
             'form_token' => $this->formTokenHelper->renderFormToken(),
             'SEO_URI_PATTERN' => Helpers::URL_KEY_PATTERN,
-            'SEO_ROUTE_NAME' => !empty($article['id']) ? sprintf(Helpers::URL_KEY_PATTERN, $article['id']) : '',
+            'SEO_ROUTE_NAME' => !empty($article['id']) ? \sprintf(Helpers::URL_KEY_PATTERN, $article['id']) : '',
         ];
     }
 

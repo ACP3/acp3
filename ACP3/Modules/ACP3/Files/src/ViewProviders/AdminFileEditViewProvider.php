@@ -57,7 +57,7 @@ class AdminFileEditViewProvider
             'form' => array_merge($file, $this->request->getPost()->all()),
             'form_token' => $this->formTokenHelper->renderFormToken(),
             'SEO_URI_PATTERN' => FilesHelpers::URL_KEY_PATTERN,
-            'SEO_ROUTE_NAME' => !empty($file['id']) ? sprintf(FilesHelpers::URL_KEY_PATTERN, $file['id']) : '',
+            'SEO_ROUTE_NAME' => !empty($file['id']) ? \sprintf(FilesHelpers::URL_KEY_PATTERN, $file['id']) : '',
         ];
     }
 

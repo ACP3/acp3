@@ -40,7 +40,7 @@ class SitemapAvailabilityExtension extends AbstractSitemapAvailabilityExtension
 
         foreach ($this->newsRepository->getAll($this->date->getCurrentDateTime()) as $result) {
             $this->addUrl(
-                sprintf(Helpers::URL_KEY_PATTERN, $result['id']),
+                \sprintf(Helpers::URL_KEY_PATTERN, $result['id']),
                 $this->date->toDateTime($result['updated_at']),
                 $isSecure
             );

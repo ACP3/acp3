@@ -34,13 +34,13 @@ class Icon
         $path = $this->fileResolver->getStaticAssetPath('system', 'Assets/svgs/' . $iconSet, $icon . '.svg');
 
         if ($path === '') {
-            throw new SvgIconNotFoundException(sprintf('Could not find SVG icon "%s" from iconset "%s"', $icon, $iconSet));
+            throw new SvgIconNotFoundException(\sprintf('Could not find SVG icon "%s" from iconset "%s"', $icon, $iconSet));
         }
 
         $iconContent = file_get_contents($path);
 
         if ($iconContent === false) {
-            throw new \RuntimeException(sprintf('An error occurred while loading file "%s"', $path));
+            throw new \RuntimeException(\sprintf('An error occurred while loading file "%s"', $path));
         }
 
         return str_replace(

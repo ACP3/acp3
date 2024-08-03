@@ -78,7 +78,7 @@ class HttpCacheWarmupCommand extends Command
         $xmlSitemapContent = file_get_contents($sitemap);
 
         if ($xmlSitemapContent === false) {
-            $output->writeln(sprintf('Could not load sitemap "%s"!', $sitemap));
+            $output->writeln(\sprintf('Could not load sitemap "%s"!', $sitemap));
 
             return 1;
         }

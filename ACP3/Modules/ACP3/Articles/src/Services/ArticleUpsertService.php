@@ -29,7 +29,7 @@ class ArticleUpsertService
     public function upsert(array $updatedData, ?int $articleId = null): int
     {
         $this->adminFormValidation
-            ->withUriAlias($articleId !== null ? sprintf(Helpers::URL_KEY_PATTERN, $articleId) : '')
+            ->withUriAlias($articleId !== null ? \sprintf(Helpers::URL_KEY_PATTERN, $articleId) : '')
             ->validate($updatedData);
 
         $updatedData['user_id'] = $this->user->getUserId();

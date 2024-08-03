@@ -142,7 +142,7 @@ final class Output
             IMAGETYPE_JPEG => 'image/jpeg',
             IMAGETYPE_PNG => 'image/png',
             IMAGETYPE_WEBP => 'image/webp',
-            default => throw new PictureResponseException(sprintf('Unsupported picture type: %s', $pictureType)),
+            default => throw new PictureResponseException(\sprintf('Unsupported picture type: %s', $pictureType)),
         };
     }
 

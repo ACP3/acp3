@@ -133,7 +133,7 @@ class Pagination
     public function render(): array
     {
         if ($this->getResultsStartOffset() > $this->totalResults) {
-            throw new InvalidPageException(sprintf('Could not find any entries for page %d', $this->currentPage));
+            throw new InvalidPageException(\sprintf('Could not find any entries for page %d', $this->currentPage));
         }
 
         if ($this->totalResults > $this->resultsPerPage) {

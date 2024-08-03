@@ -32,7 +32,7 @@ class GenerateComponentPathsJson
             $content = file_get_contents($path);
 
             if ($content === false) {
-                throw new \RuntimeException(sprintf('Could not read file "%s"!', $path));
+                throw new \RuntimeException(\sprintf('Could not read file "%s"!', $path));
             }
 
             $composer = json_decode($content, true, 512, JSON_THROW_ON_ERROR);

@@ -87,6 +87,6 @@ HTML;
             return $resourcePathEdit . 'id_' . $dbResultRow[$this->getPrimaryKey()];
         }
 
-        return sprintf($resourcePathEdit, $dbResultRow[$this->getPrimaryKey()]);
+        return \sprintf($resourcePathEdit, $dbResultRow[$this->getPrimaryKey()]);
     }
 }

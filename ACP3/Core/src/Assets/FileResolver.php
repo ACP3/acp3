@@ -43,7 +43,7 @@ class FileResolver
     public function resolveTemplatePath(string $templatePath): string
     {
         if (!str_contains($templatePath, '/')) {
-            throw new \InvalidArgumentException(sprintf('The provided template path "%s" is missing the module name!', $templatePath));
+            throw new \InvalidArgumentException(\sprintf('The provided template path "%s" is missing the module name!', $templatePath));
         }
 
         // Split the template path in its components

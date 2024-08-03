@@ -36,7 +36,7 @@ class PictureColumnRenderer extends AbstractColumnRenderer
      */
     protected function getUrl(array $data, string $value): string
     {
-        $url = sprintf($data['pattern'], $value);
+        $url = \sprintf($data['pattern'], $value);
         if (isset($data['isRoute']) && $data['isRoute'] === true) {
             return $this->router->route($url);
         }

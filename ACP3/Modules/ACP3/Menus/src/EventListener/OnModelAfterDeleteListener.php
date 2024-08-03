@@ -48,7 +48,7 @@ class OnModelAfterDeleteListener implements EventSubscriberInterface
                 continue;
             }
 
-            $uri = sprintf(
+            $uri = \sprintf(
                 $this->routePathPatterns->getRoutePathPattern($event->getTableName()),
                 $entryId
             );

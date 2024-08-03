@@ -60,7 +60,7 @@ class Libraries
         // @deprecated since ACP3 version 6.14.0, to be removed with version 7.0.0.
         if (\is_string($library)) {
             if (empty($options)) {
-                throw new \InvalidArgumentException(sprintf('You need to pass a valid options array for this asset library %s', $library));
+                throw new \InvalidArgumentException(\sprintf('You need to pass a valid options array for this asset library %s', $library));
             }
 
             $library = new LibraryEntity(
@@ -89,7 +89,7 @@ class Libraries
     {
         foreach ($libraries as $libraryIdentifier) {
             if (\array_key_exists($libraryIdentifier, $this->libraries) === false) {
-                throw new \InvalidArgumentException(sprintf('Could not find library %s', $libraryIdentifier));
+                throw new \InvalidArgumentException(\sprintf('Could not find library %s', $libraryIdentifier));
             }
 
             // Resolve javascript library dependencies recursively
