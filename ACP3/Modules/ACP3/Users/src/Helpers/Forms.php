@@ -24,7 +24,7 @@ class Forms
         string $defaultMail = '',
         string $defaultWebsite = '',
         string $defaultIcqNumber = '',
-        string $defaultSkypeName = ''
+        string $defaultSkypeName = '',
     ): array {
         return [
             [
@@ -73,7 +73,7 @@ class Forms
         int $displayAddress = 0,
         int $displayBirthday = 0,
         int $displayCountry = 0,
-        int $displayMail = 0
+        int $displayMail = 0,
     ): array {
         return [
             'address_display' => $this->displayAddress($displayAddress),

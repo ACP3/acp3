@@ -21,7 +21,7 @@ class VotePost extends Core\Controller\AbstractWidgetAction
         private readonly FormAction $actionHelper,
         private readonly Core\Date $date,
         private readonly Polls\Validation\VoteValidation $voteValidation,
-        private readonly Polls\Model\VoteModel $voteModel
+        private readonly Polls\Model\VoteModel $voteModel,
     ) {
         parent::__construct($context);
     }

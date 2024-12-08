@@ -20,7 +20,7 @@ class Details extends Core\Controller\AbstractWidgetAction
         Core\Controller\Context\Context $context,
         private readonly Core\Date $date,
         private readonly News\Repository\NewsRepository $newsRepository,
-        private readonly News\ViewProviders\NewsDetailsViewProvider $newsDetailsViewProvider
+        private readonly News\ViewProviders\NewsDetailsViewProvider $newsDetailsViewProvider,
     ) {
         parent::__construct($context);
     }

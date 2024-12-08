@@ -16,7 +16,7 @@ abstract class AbstractAction extends AbstractWidgetAction
 {
     public function __construct(
         Context\Context $context,
-        private readonly UserModelInterface $user
+        private readonly UserModelInterface $user,
     ) {
         parent::__construct($context);
     }

@@ -20,7 +20,7 @@ class Details extends Core\Controller\AbstractWidgetAction
         Core\Controller\Context\Context $context,
         private readonly Core\Date $date,
         private readonly Files\Repository\FilesRepository $filesRepository,
-        private readonly Files\ViewProviders\FileDetailsViewProvider $fileDetailsViewProvider
+        private readonly Files\ViewProviders\FileDetailsViewProvider $fileDetailsViewProvider,
     ) {
         parent::__construct($context);
     }

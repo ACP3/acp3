@@ -20,7 +20,7 @@ class Index extends Core\Controller\AbstractWidgetAction
 
     public function __construct(
         Core\Controller\Context\Context $context,
-        private readonly Guestbook\ViewProviders\GuestbookListViewProvider $guestbookListViewProvider
+        private readonly Guestbook\ViewProviders\GuestbookListViewProvider $guestbookListViewProvider,
     ) {
         parent::__construct($context);
     }

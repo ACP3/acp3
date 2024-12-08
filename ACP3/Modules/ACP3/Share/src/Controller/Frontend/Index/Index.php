@@ -16,7 +16,7 @@ class Index extends AbstractWidgetAction
 {
     public function __construct(
         Context $context,
-        private readonly BackendManager $shariffBackend
+        private readonly BackendManager $shariffBackend,
     ) {
         parent::__construct($context);
     }

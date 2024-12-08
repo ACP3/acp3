@@ -23,7 +23,7 @@ class SitemapAvailabilityExtension extends AbstractSitemapAvailabilityExtension
         RouterInterface $router,
         protected GalleryRepository $galleryRepository,
         protected PictureRepository $pictureRepository,
-        MetaStatementsServiceInterface $metaStatements
+        MetaStatementsServiceInterface $metaStatements,
     ) {
         parent::__construct($router, $metaStatements);
     }

@@ -25,7 +25,7 @@ class Title extends \ACP3\Core\Breadcrumb\Title
         private readonly RequestInterface $request,
         Steps $steps,
         EventDispatcherInterface $eventDispatcher,
-        private readonly SettingsInterface $settings
+        private readonly SettingsInterface $settings,
     ) {
         parent::__construct($steps, $eventDispatcher);
     }

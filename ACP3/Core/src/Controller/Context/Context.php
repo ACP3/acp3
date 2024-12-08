@@ -20,7 +20,7 @@ class Context
         private readonly RequestInterface $request,
         private readonly View $view,
         private readonly SettingsInterface $config,
-        private readonly ApplicationMode $applicationMode
+        private readonly ApplicationMode $applicationMode,
     ) {
     }
 

@@ -33,7 +33,7 @@ abstract class AbstractNestedSetModel extends AbstractModel implements SortingAw
         protected Insert $insertOperation,
         protected Edit $editOperation,
         protected Delete $deleteOperation,
-        private readonly Sort $sortOperation
+        private readonly Sort $sortOperation,
     ) {
         parent::__construct($eventDispatcher, $dataProcessor, $repository);
     }

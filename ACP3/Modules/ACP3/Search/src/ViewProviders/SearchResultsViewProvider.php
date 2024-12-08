@@ -24,7 +24,7 @@ class SearchResultsViewProvider
      */
     public function __invoke(
         array $searchResults,
-        string $searchTerm
+        string $searchTerm,
     ): array {
         $this->breadcrumb
             ->append($this->translator->t('search', 'search'), 'search')

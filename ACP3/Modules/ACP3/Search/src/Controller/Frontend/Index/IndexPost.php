@@ -24,7 +24,7 @@ class IndexPost extends Core\Controller\AbstractWidgetAction
         private readonly Search\Helpers $searchHelpers,
         private readonly Search\Validation\FormValidation $searchValidator,
         private readonly Search\Utility\SearchAvailabilityRegistrar $availableModulesRegistrar,
-        private readonly Search\ViewProviders\SearchResultsViewProvider $searchResultsViewProvider
+        private readonly Search\ViewProviders\SearchResultsViewProvider $searchResultsViewProvider,
     ) {
         parent::__construct($context);
     }

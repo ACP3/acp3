@@ -25,7 +25,7 @@ class Details extends AbstractWidgetAction
         Context $context,
         private readonly ArticlePaginatedViewProvider $articlePaginatedViewProvider,
         private readonly Date $date,
-        private readonly ArticleRepository $articleRepository
+        private readonly ArticleRepository $articleRepository,
     ) {
         parent::__construct($context);
     }

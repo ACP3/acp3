@@ -24,7 +24,7 @@ class SettingsPost extends Core\Controller\AbstractWidgetAction
         private readonly FormAction $actionHelper,
         private readonly CacheItemPoolInterface $galleryCachePool,
         private readonly Core\Helpers\Secure $secureHelper,
-        private readonly Gallery\Validation\AdminSettingsFormValidation $adminSettingsFormValidation
+        private readonly Gallery\Validation\AdminSettingsFormValidation $adminSettingsFormValidation,
     ) {
         parent::__construct($context);
     }

@@ -18,7 +18,7 @@ class Index extends Core\Controller\AbstractWidgetAction
 
     public function __construct(
         Core\Controller\Context\Context $context,
-        private readonly Gallery\ViewProviders\GalleryListWidgetViewProvider $galleryListWidgetViewProvider
+        private readonly Gallery\ViewProviders\GalleryListWidgetViewProvider $galleryListWidgetViewProvider,
     ) {
         parent::__construct($context);
     }

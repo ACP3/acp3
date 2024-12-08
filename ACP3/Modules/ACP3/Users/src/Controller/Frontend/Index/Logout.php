@@ -22,7 +22,7 @@ class Logout extends Core\Controller\AbstractWidgetAction
         private readonly UserModelInterface $user,
         private readonly Core\Http\RedirectResponse $redirectResponse,
         private readonly Users\ViewProviders\LogoutViewProvider $logoutViewProvider,
-        private readonly Users\Model\AuthenticationModel $authenticationModel
+        private readonly Users\Model\AuthenticationModel $authenticationModel,
     ) {
         parent::__construct($context);
     }

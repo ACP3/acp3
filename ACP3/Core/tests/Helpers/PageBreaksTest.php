@@ -22,11 +22,11 @@ class PageBreaksTest extends \PHPUnit\Framework\TestCase
      */
     protected $requestMock;
     /**
-     * @var \PHPUnit\Framework\MockObject\MockObject&\ACP3\Core\Router\RouterInterface
+     * @var \PHPUnit\Framework\MockObject\MockObject&RouterInterface
      */
     protected $routerMock;
     /**
-     * @var \PHPUnit\Framework\MockObject\MockObject&\ACP3\Core\Helpers\TableOfContents
+     * @var \PHPUnit\Framework\MockObject\MockObject&TableOfContents
      */
     protected $tocMock;
 
@@ -92,7 +92,7 @@ class PageBreaksTest extends \PHPUnit\Framework\TestCase
         string $currentPageText,
         string $baseUrlPath,
         string $nextPageUrl,
-        string $prevPageUrl
+        string $prevPageUrl,
     ): void {
         $this->setUpExpectations($currentPage, $baseUrlPath);
 

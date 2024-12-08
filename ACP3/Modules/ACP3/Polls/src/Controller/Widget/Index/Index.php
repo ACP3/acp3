@@ -17,7 +17,7 @@ class Index extends Core\Controller\AbstractWidgetAction
         private readonly Core\Date $date,
         private readonly Polls\Repository\PollRepository $pollRepository,
         private readonly Polls\ViewProviders\PollWidgetViewProvider $pollWidgetViewProvider,
-        private readonly Polls\Helpers $pollHelpers
+        private readonly Polls\Helpers $pollHelpers,
     ) {
         parent::__construct($context);
     }

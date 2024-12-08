@@ -19,7 +19,7 @@ class OnModelDeleteAfterListener implements EventSubscriberInterface
     public function __construct(
         private readonly RoutePathPatterns $routePathPatterns,
         private readonly Modules $modules,
-        private readonly SocialSharingManager $socialSharingManager
+        private readonly SocialSharingManager $socialSharingManager,
     ) {
     }
 

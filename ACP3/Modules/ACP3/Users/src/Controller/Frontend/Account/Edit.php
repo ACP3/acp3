@@ -16,7 +16,7 @@ class Edit extends AbstractAction
     public function __construct(
         Core\Controller\Context\Context $context,
         UserModelInterface $user,
-        private readonly Users\ViewProviders\AccountEditViewProvider $accountEditViewProvider
+        private readonly Users\ViewProviders\AccountEditViewProvider $accountEditViewProvider,
     ) {
         parent::__construct($context, $user);
     }

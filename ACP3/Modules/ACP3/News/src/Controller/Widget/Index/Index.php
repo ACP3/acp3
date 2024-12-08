@@ -18,7 +18,7 @@ class Index extends Core\Controller\AbstractWidgetAction
 
     public function __construct(
         Core\Controller\Context\Context $context,
-        private readonly News\ViewProviders\LatestNewsListWidgetViewProvider $latestNewsListWidgetViewProvider
+        private readonly News\ViewProviders\LatestNewsListWidgetViewProvider $latestNewsListWidgetViewProvider,
     ) {
         parent::__construct($context);
     }

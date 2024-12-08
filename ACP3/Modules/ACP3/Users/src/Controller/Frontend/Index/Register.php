@@ -21,7 +21,7 @@ class Register extends Core\Controller\AbstractWidgetAction
         private readonly UserModelInterface $user,
         private readonly Core\Http\RedirectResponse $redirectResponse,
         private readonly Core\Helpers\Alerts $alertsHelper,
-        private readonly Users\ViewProviders\RegistrationViewProvider $registrationViewProvider
+        private readonly Users\ViewProviders\RegistrationViewProvider $registrationViewProvider,
     ) {
         parent::__construct($context);
     }

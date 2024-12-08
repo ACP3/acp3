@@ -16,7 +16,7 @@ class Settings extends AbstractAction
     public function __construct(
         Core\Controller\Context\Context $context,
         UserModelInterface $user,
-        private readonly Users\ViewProviders\AccountSettingsViewProvider $accountSettingsViewProvider
+        private readonly Users\ViewProviders\AccountSettingsViewProvider $accountSettingsViewProvider,
     ) {
         parent::__construct($context, $user);
     }

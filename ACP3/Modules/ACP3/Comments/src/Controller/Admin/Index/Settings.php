@@ -15,7 +15,7 @@ class Settings extends AbstractWidgetAction
 {
     public function __construct(
         Context $context,
-        private readonly AdminCommentsSettingsViewProvider $adminCommentsSettingsViewProvider
+        private readonly AdminCommentsSettingsViewProvider $adminCommentsSettingsViewProvider,
     ) {
         parent::__construct($context);
     }

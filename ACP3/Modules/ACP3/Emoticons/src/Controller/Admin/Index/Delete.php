@@ -18,7 +18,7 @@ class Delete extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Context $context,
         private readonly FormAction $actionHelper,
-        private readonly Emoticons\Model\EmoticonsModel $emoticonsModel
+        private readonly Emoticons\Model\EmoticonsModel $emoticonsModel,
     ) {
         parent::__construct($context);
     }

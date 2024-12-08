@@ -20,7 +20,7 @@ class Files extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly Categories\Repository\CategoryRepository $categoryRepository,
-        private readonly FilesByCategoryIdViewProvider $filesByCategoryIdViewProvider
+        private readonly FilesByCategoryIdViewProvider $filesByCategoryIdViewProvider,
     ) {
         parent::__construct($context);
     }

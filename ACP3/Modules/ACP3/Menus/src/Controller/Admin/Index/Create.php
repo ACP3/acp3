@@ -14,7 +14,7 @@ class Create extends Core\Controller\AbstractWidgetAction
 {
     public function __construct(
         Core\Controller\Context\Context $context,
-        private readonly Menus\ViewProviders\AdminMenuEditViewProvider $adminMenuEditViewProvider
+        private readonly Menus\ViewProviders\AdminMenuEditViewProvider $adminMenuEditViewProvider,
     ) {
         parent::__construct($context);
     }

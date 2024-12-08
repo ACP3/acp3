@@ -71,7 +71,7 @@ class AdminCategoryEditViewProvider
         ?int $moduleId = null,
         ?int $parentId = null,
         ?int $leftId = null,
-        ?int $rightId = null
+        ?int $rightId = null,
     ): array {
         if ($moduleId === null) {
             return [];

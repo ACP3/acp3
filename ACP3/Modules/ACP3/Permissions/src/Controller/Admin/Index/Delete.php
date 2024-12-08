@@ -19,7 +19,7 @@ class Delete extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly FormAction $actionHelper,
-        private readonly AclRoleModel $rolesModel
+        private readonly AclRoleModel $rolesModel,
     ) {
         parent::__construct($context);
     }

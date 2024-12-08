@@ -21,7 +21,7 @@ class Index extends AbstractWidgetAction
     public function __construct(
         Context $context,
         private readonly SearchViewProvider $searchViewProvider,
-        private readonly ServiceLocator $controllerActionServiceLocator
+        private readonly ServiceLocator $controllerActionServiceLocator,
     ) {
         parent::__construct($context);
     }

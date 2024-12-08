@@ -58,7 +58,7 @@ class NavbarTest extends TestCase
     <a href="" class="nav-link">Bar</a>
   </li>
 </ul>
-HTML
+HTML,
             ],
         ];
     }
@@ -226,7 +226,7 @@ HTML
     <a href="" class="nav-link">Bar</a>
   </li>
 </ul>
-HTML
+HTML,
             ],
         ];
     }

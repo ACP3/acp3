@@ -15,7 +15,7 @@ class Index extends Core\Controller\AbstractWidgetAction
 {
     public function __construct(
         Context $context,
-        private readonly Contact\ViewProviders\ContactFormViewProvider $contactFormViewProvider
+        private readonly Contact\ViewProviders\ContactFormViewProvider $contactFormViewProvider,
     ) {
         parent::__construct($context);
     }

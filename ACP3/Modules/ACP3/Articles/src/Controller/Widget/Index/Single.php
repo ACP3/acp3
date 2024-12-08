@@ -20,7 +20,7 @@ class Single extends Core\Controller\AbstractWidgetAction
         Core\Controller\Context\Context $context,
         private readonly Core\Date $date,
         private readonly Articles\Repository\ArticleRepository $articleRepository,
-        private readonly Articles\ViewProviders\ArticleFullViewProvider $articleFullViewProvider
+        private readonly Articles\ViewProviders\ArticleFullViewProvider $articleFullViewProvider,
     ) {
         parent::__construct($context);
     }

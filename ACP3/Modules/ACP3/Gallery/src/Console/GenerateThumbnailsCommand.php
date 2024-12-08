@@ -26,7 +26,7 @@ class GenerateThumbnailsCommand extends Command
         private readonly ApplicationPath $appPath,
         private readonly ThumbnailGenerator $thumbnailGenerator,
         private readonly GalleryRepository $galleryRepository,
-        private readonly PictureRepository $galleryPicturesRepository
+        private readonly PictureRepository $galleryPicturesRepository,
     ) {
         parent::__construct();
     }

@@ -20,7 +20,7 @@ class SendEmail
      * Generates and sends an E-mail.
      */
     public function execute(
-        MailerMessage $message
+        MailerMessage $message,
     ): bool {
         return $this->mailer
             ->reset()

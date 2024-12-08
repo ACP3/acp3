@@ -71,7 +71,7 @@ class Datepicker extends AbstractFunction
         array|string $name,
         array|string $value = '',
         bool $showTime = true,
-        bool $inputFieldOnly = false
+        bool $inputFieldOnly = false,
     ): array {
         $datePicker = [
             'range' => \is_array($name),

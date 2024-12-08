@@ -21,7 +21,7 @@ class OrderPost extends AbstractWidgetAction
         Context $context,
         private readonly RedirectResponse $redirectResponse,
         private readonly MenuItemRepository $menuItemRepository,
-        private readonly MenuItemsModel $menuItemsModel
+        private readonly MenuItemsModel $menuItemsModel,
     ) {
         parent::__construct($context);
     }

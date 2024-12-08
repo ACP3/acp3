@@ -26,7 +26,7 @@ class LoginPost extends AbstractWidgetAction
         private readonly FormAction $actionHelper,
         private readonly RedirectResponse $redirectResponse,
         private readonly Secure $secureHelper,
-        private readonly AuthenticationModel $authenticationModel
+        private readonly AuthenticationModel $authenticationModel,
     ) {
         parent::__construct($context);
     }

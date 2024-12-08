@@ -15,7 +15,7 @@ class Settings extends Core\Controller\AbstractWidgetAction
 {
     public function __construct(
         Context $context,
-        private readonly Contact\ViewProviders\AdminSettingsViewProvider $adminSettingsViewProvider
+        private readonly Contact\ViewProviders\AdminSettingsViewProvider $adminSettingsViewProvider,
     ) {
         parent::__construct($context);
     }

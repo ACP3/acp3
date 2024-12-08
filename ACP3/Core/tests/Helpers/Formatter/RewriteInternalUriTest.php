@@ -30,11 +30,11 @@ class RewriteInternalUriTest extends TestCase
      */
     private $controllerActionExistsMock;
     /**
-     * @var \PHPUnit\Framework\MockObject\MockObject&\ACP3\Core\Http\RequestInterface
+     * @var \PHPUnit\Framework\MockObject\MockObject&RequestInterface
      */
     private $requestMock;
     /**
-     * @var \PHPUnit\Framework\MockObject\MockObject&\ACP3\Core\Router\RouterInterface
+     * @var \PHPUnit\Framework\MockObject\MockObject&RouterInterface
      */
     private $routerMock;
     /**

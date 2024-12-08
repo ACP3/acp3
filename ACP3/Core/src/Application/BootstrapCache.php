@@ -32,7 +32,7 @@ class BootstrapCache extends HttpCache implements CacheInvalidation
         HttpKernelInterface $kernel,
         StoreInterface $store,
         ?SurrogateInterface $surrogate = null,
-        array $options = []
+        array $options = [],
     ) {
         parent::__construct($kernel, $store, $surrogate, $options);
 

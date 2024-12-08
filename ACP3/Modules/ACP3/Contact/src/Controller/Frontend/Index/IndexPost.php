@@ -24,7 +24,7 @@ class IndexPost extends Core\Controller\AbstractWidgetAction
         private readonly Core\Helpers\Alerts $alertsHelper,
         private readonly Contact\Validation\FormValidation $formValidation,
         private readonly Contact\Model\ContactsModel $contactsModel,
-        private readonly Contact\Model\ContactFormModel $contactFormModel
+        private readonly Contact\Model\ContactFormModel $contactFormModel,
     ) {
         parent::__construct($context);
     }

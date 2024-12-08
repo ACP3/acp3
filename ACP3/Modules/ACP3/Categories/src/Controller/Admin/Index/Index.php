@@ -15,7 +15,7 @@ class Index extends Core\Controller\AbstractWidgetAction
 {
     public function __construct(
         Core\Controller\Context\Context $context,
-        private readonly Categories\ViewProviders\DataGridViewProvider $dataGridViewProvider
+        private readonly Categories\ViewProviders\DataGridViewProvider $dataGridViewProvider,
     ) {
         parent::__construct($context);
     }

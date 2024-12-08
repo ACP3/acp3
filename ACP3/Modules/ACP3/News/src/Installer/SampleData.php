@@ -15,7 +15,7 @@ class SampleData extends \ACP3\Core\Installer\AbstractSampleData
 {
     public function __construct(
         SchemaHelper $schemaHelper,
-        private readonly Translator $translator
+        private readonly Translator $translator,
     ) {
         parent::__construct($schemaHelper);
     }

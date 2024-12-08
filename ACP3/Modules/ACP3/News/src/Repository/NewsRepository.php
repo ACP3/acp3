@@ -87,7 +87,7 @@ class NewsRepository extends Core\Repository\AbstractRepository
         array|int $categoryId,
         string $time = '',
         ?int $limitStart = null,
-        ?int $resultsPerPage = null
+        ?int $resultsPerPage = null,
     ): array {
         if (false === \is_array($categoryId)) {
             $categoryId = [$categoryId];

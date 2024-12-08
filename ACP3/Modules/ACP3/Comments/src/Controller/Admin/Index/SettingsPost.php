@@ -23,7 +23,7 @@ class SettingsPost extends AbstractWidgetAction
         Context $context,
         private readonly FormAction $actionHelper,
         private readonly Secure $secureHelper,
-        private readonly AdminSettingsFormValidation $adminSettingsFormValidation
+        private readonly AdminSettingsFormValidation $adminSettingsFormValidation,
     ) {
         parent::__construct($context);
     }

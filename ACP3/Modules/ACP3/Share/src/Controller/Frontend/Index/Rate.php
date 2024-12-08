@@ -21,7 +21,7 @@ class Rate extends AbstractWidgetAction
         Context $context,
         private readonly ShareRepository $shareRepository,
         private readonly ShareRatingsRepository $shareRatingsRepository,
-        private readonly ShareRatingModel $shareRatingModel
+        private readonly ShareRatingModel $shareRatingModel,
     ) {
         parent::__construct($context);
     }

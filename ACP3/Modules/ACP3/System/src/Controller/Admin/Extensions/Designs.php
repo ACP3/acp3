@@ -23,7 +23,7 @@ class Designs extends AbstractWidgetAction
         private readonly AdminThemesViewProvider $adminThemesViewProvider,
         private readonly ThemePathInterface $theme,
         private readonly RedirectMessages $redirectMessages,
-        private readonly CacheClearService $cacheClearService
+        private readonly CacheClearService $cacheClearService,
     ) {
         parent::__construct($context);
     }

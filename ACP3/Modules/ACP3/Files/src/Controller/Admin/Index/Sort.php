@@ -20,7 +20,7 @@ class Sort extends AbstractWidgetAction
         Context $context,
         private readonly Core\Http\RedirectResponse $redirectResponse,
         private readonly FilesRepository $filesRepository,
-        private readonly FilesModel $filesModel
+        private readonly FilesModel $filesModel,
     ) {
         parent::__construct($context);
     }

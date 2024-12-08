@@ -23,7 +23,7 @@ class SettingsPost extends AbstractAction
         private readonly UserModelInterface $user,
         private readonly Users\Model\AuthenticationModel $authenticationModel,
         private readonly Users\Model\UsersModel $usersModel,
-        private readonly Users\Validation\AccountSettingsFormValidation $accountSettingsFormValidation
+        private readonly Users\Validation\AccountSettingsFormValidation $accountSettingsFormValidation,
     ) {
         parent::__construct($context, $user);
     }

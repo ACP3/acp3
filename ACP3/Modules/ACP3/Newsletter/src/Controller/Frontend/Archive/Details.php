@@ -19,7 +19,7 @@ class Details extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly Newsletter\Repository\NewsletterRepository $newsletterRepository,
-        private readonly Newsletter\ViewProviders\NewsletterDetailsViewProvider $newsletterDetailsViewProvider
+        private readonly Newsletter\ViewProviders\NewsletterDetailsViewProvider $newsletterDetailsViewProvider,
     ) {
         parent::__construct($context);
     }

@@ -21,7 +21,7 @@ class Login extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Context $context,
         private readonly UserModelInterface $user,
-        private readonly LoginViewProvider $loginViewProvider
+        private readonly LoginViewProvider $loginViewProvider,
     ) {
         parent::__construct($context);
     }

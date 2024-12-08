@@ -16,7 +16,7 @@ class Table extends AbstractWidgetAction
 {
     public function __construct(
         Context $context,
-        private readonly DataGridByTableViewProvider $dataGridByTableViewProvider
+        private readonly DataGridByTableViewProvider $dataGridByTableViewProvider,
     ) {
         parent::__construct($context);
     }

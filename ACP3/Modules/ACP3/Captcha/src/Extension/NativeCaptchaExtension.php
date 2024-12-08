@@ -29,7 +29,7 @@ class NativeCaptchaExtension implements CaptchaExtensionInterface
     public function getCaptcha(
         int $captchaLength = self::CAPTCHA_DEFAULT_LENGTH,
         string $formFieldId = self::CAPTCHA_DEFAULT_INPUT_ID,
-        array $displayOptions = []
+        array $displayOptions = [],
     ): string {
         if (!$this->user->isAuthenticated() && $this->hasCaptchaAccess()) {
             $token = sha1((string) mt_rand());

@@ -23,7 +23,7 @@ class EditPost extends AbstractFormAction
         private readonly UserModelInterface $user,
         private readonly Newsletter\Model\NewsletterModel $newsletterModel,
         private readonly Newsletter\Validation\AdminFormValidation $adminFormValidation,
-        Newsletter\Helper\SendNewsletter $newsletterHelpers
+        Newsletter\Helper\SendNewsletter $newsletterHelpers,
     ) {
         parent::__construct($context, $newsletterHelpers);
     }

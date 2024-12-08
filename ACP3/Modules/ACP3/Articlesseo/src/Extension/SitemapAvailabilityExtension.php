@@ -21,7 +21,7 @@ class SitemapAvailabilityExtension extends AbstractSitemapAvailabilityExtension
         protected Date $date,
         RouterInterface $router,
         protected ArticleRepository $articleRepository,
-        MetaStatementsServiceInterface $metaStatements
+        MetaStatementsServiceInterface $metaStatements,
     ) {
         parent::__construct($router, $metaStatements);
     }

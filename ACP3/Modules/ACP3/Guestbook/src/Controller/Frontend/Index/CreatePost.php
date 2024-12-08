@@ -22,7 +22,7 @@ class CreatePost extends Core\Controller\AbstractWidgetAction
         private readonly FormAction $actionHelper,
         private readonly UserModelInterface $user,
         private readonly Guestbook\Model\GuestbookModel $guestbookModel,
-        private readonly Guestbook\Validation\FormValidation $formValidation
+        private readonly Guestbook\Validation\FormValidation $formValidation,
     ) {
         parent::__construct($context);
     }

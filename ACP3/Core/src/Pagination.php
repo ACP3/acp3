@@ -220,7 +220,7 @@ class Pagination
         string $uri,
         string $title = '',
         bool $selected = false,
-        string $selector = ''
+        string $selector = '',
     ): self {
         $this->pagination[] = $this->buildPageNumber($pageNumber, $uri, $title, $selected, $selector);
 
@@ -235,7 +235,7 @@ class Pagination
         string $uri,
         string $title = '',
         bool $selected = false,
-        string $selector = ''
+        string $selector = '',
     ): array {
         return [
             'page' => $pageNumber,

@@ -25,7 +25,7 @@ class RegisterPost extends Core\Controller\AbstractWidgetAction
         private readonly Core\Helpers\Alerts $alertsHelper,
         private readonly Users\Model\UsersModel $usersModel,
         private readonly Users\Validation\RegistrationFormValidation $registrationFormValidation,
-        private readonly Permissions\Helpers $permissionsHelpers
+        private readonly Permissions\Helpers $permissionsHelpers,
     ) {
         parent::__construct($context);
     }

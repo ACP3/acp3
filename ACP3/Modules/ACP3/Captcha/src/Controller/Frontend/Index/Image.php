@@ -15,7 +15,7 @@ class Image extends AbstractWidgetAction
 {
     public function __construct(
         Context $context,
-        protected Session $sessionHandler
+        protected Session $sessionHandler,
     ) {
         parent::__construct($context);
     }

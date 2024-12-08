@@ -15,7 +15,7 @@ class Edit extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly Files\Model\FilesModel $filesModel,
-        private readonly Files\ViewProviders\AdminFileEditViewProvider $adminFileEditViewProvider
+        private readonly Files\ViewProviders\AdminFileEditViewProvider $adminFileEditViewProvider,
     ) {
         parent::__construct($context);
     }

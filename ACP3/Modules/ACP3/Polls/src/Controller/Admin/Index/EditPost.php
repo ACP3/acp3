@@ -22,7 +22,7 @@ class EditPost extends Core\Controller\AbstractWidgetAction
         private readonly FormAction $actionHelper,
         private readonly UserModelInterface $user,
         private readonly Polls\Model\PollsModel $pollsModel,
-        private readonly Polls\Validation\AdminFormValidation $pollsValidator
+        private readonly Polls\Validation\AdminFormValidation $pollsValidator,
     ) {
         parent::__construct($context);
     }

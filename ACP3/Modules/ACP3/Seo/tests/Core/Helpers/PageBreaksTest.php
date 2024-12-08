@@ -46,7 +46,7 @@ class PageBreaksTest extends \ACP3\Core\Helpers\PageBreaksTest
         string $currentPageText,
         string $baseUrlPath,
         string $nextPageUrl,
-        string $prevPageUrl
+        string $prevPageUrl,
     ): void {
         $this->setUpMetaStatementsMockExpectations($nextPageUrl, $prevPageUrl);
 

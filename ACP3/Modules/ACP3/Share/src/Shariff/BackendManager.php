@@ -25,7 +25,7 @@ class BackendManager
         private readonly ClientInterface $client,
         private readonly LoggerInterface $logger,
         private readonly array $domains,
-        private readonly array $services
+        private readonly array $services,
     ) {
     }
 

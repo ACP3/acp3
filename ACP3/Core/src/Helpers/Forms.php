@@ -28,7 +28,7 @@ class Forms
         ?int $currentValue,
         int $steps = 5,
         int $maxValue = 50,
-        string $formFieldName = 'entries'
+        string $formFieldName = 'entries',
     ): array {
         $values = [];
         for ($i = $steps; $i <= $maxValue; $i += $steps) {
@@ -47,7 +47,7 @@ class Forms
         string $formFieldName,
         mixed $defaultValue,
         array|int|string|null $currentValue = '',
-        string $htmlAttribute = ''
+        string $htmlAttribute = '',
     ): string {
         $htmlAttribute = $this->buildHtmlAttribute($htmlAttribute);
         if (\is_array($currentValue)) {
@@ -87,7 +87,7 @@ class Forms
         string $formFieldName,
         array $values,
         array|int|string|null $currentValue = '',
-        string $htmlAttribute = 'selected'
+        string $htmlAttribute = 'selected',
     ): array {
         $choices = [];
         $id = str_replace('_', '-', $formFieldName);
@@ -110,7 +110,7 @@ class Forms
     public function linkTargetChoicesGenerator(
         string $formFieldName,
         ?int $currentValue = null,
-        string $htmlAttribute = 'selected'
+        string $htmlAttribute = 'selected',
     ): array {
         $linkTargets = [
             LinkTargetEnum::TARGET_SELF->value => $this->translator->t('system', 'window_self'),
@@ -126,7 +126,7 @@ class Forms
     public function yesNoChoicesGenerator(
         string $formFieldName,
         ?int $currentValue = null,
-        string $htmlAttribute = 'selected'
+        string $htmlAttribute = 'selected',
     ): array {
         $values = [
             YesNoEnum::YES->value => $this->translator->t('system', 'yes'),

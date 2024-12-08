@@ -23,7 +23,7 @@ class OnModelAfterDeleteListener implements EventSubscriberInterface
     public function __construct(
         private readonly RoutePathPatterns $routePathPatterns,
         private readonly Modules $modules,
-        private readonly ManageMenuItem $manageMenuItem
+        private readonly ManageMenuItem $manageMenuItem,
     ) {
     }
 

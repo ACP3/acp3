@@ -18,7 +18,7 @@ class Delete extends AbstractWidgetAction
     public function __construct(
         Context $context,
         private readonly FormAction $actionHelper,
-        private readonly CommentByModuleModel $commentByModuleModel
+        private readonly CommentByModuleModel $commentByModuleModel,
     ) {
         parent::__construct($context);
     }

@@ -28,7 +28,7 @@ class NewsletterModel extends AbstractModel implements UpdatedAtAwareModelInterf
         EventDispatcherInterface $eventDispatcher,
         DataProcessor $dataProcessor,
         protected SettingsInterface $config,
-        NewsletterRepository $newsletterRepository
+        NewsletterRepository $newsletterRepository,
     ) {
         parent::__construct($eventDispatcher, $dataProcessor, $newsletterRepository);
     }

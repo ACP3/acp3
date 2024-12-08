@@ -68,7 +68,7 @@ class FormAction
         ?string $action,
         callable $callback,
         ?string $moduleConfirmUrl = null,
-        ?string $moduleIndexUrl = null
+        ?string $moduleIndexUrl = null,
     ): array|Response {
         return $this->handleCustomDeleteAction(
             $action,
@@ -89,7 +89,7 @@ class FormAction
         ?string $action,
         callable $callback,
         ?string $moduleConfirmUrl = null,
-        ?string $moduleIndexUrl = null
+        ?string $moduleIndexUrl = null,
     ): array|Response {
         [$moduleConfirmUrl, $moduleIndexUrl] = $this->generateDefaultConfirmationBoxUris(
             $moduleConfirmUrl,

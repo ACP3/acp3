@@ -25,7 +25,7 @@ class AdminFormValidation extends Core\Validation\AbstractFormValidation
         protected Core\Settings\SettingsInterface $settings,
         Core\I18n\Translator $translator,
         Core\Validation\Validator $validator,
-        protected CategoryRepository $categoryRepository
+        protected CategoryRepository $categoryRepository,
     ) {
         parent::__construct($translator, $validator);
     }

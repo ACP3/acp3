@@ -23,7 +23,7 @@ class IndexPost extends Core\Controller\AbstractWidgetAction
         private readonly FormAction $actionHelper,
         private readonly Core\Helpers\Alerts $alertsHelper,
         private readonly Newsletter\Helper\Subscribe $subscribeHelper,
-        private readonly Newsletter\Validation\SubscribeFormValidation $subscribeFormValidation
+        private readonly Newsletter\Validation\SubscribeFormValidation $subscribeFormValidation,
     ) {
         parent::__construct($context);
     }

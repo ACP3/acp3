@@ -55,7 +55,7 @@ class Install
     private function install(
         SchemaInterface $schema,
         ContainerInterface $container,
-        string $installerServiceId
+        string $installerServiceId,
     ): bool {
         /** @var \ACP3\Core\Modules\InstallerInterface $installer */
         $installer = $container->get($installerServiceId);
@@ -69,7 +69,7 @@ class Install
      */
     public function installSampleData(
         SampleDataInterface $sampleData,
-        SchemaHelper $schemaHelper
+        SchemaHelper $schemaHelper,
     ): void {
         $schemaHelper->executeSqlQueries($sampleData->sampleData());
     }

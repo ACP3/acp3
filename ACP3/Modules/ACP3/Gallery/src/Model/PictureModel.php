@@ -33,7 +33,7 @@ class PictureModel extends AbstractModel implements SortingAwareInterface
         EventDispatcherInterface $eventDispatcher,
         DataProcessor $dataProcessor,
         PictureRepository $pictureRepository,
-        private readonly Sort $sortHelper
+        private readonly Sort $sortHelper,
     ) {
         parent::__construct($eventDispatcher, $dataProcessor, $pictureRepository);
     }

@@ -31,7 +31,7 @@ final class ServiceContainerBuilder extends ContainerBuilder
      */
     public function __construct(
         private readonly ApplicationPath $applicationPath,
-        private readonly bool $installationIsInProgress = false
+        private readonly bool $installationIsInProgress = false,
     ) {
         parent::__construct();
 
@@ -105,7 +105,7 @@ final class ServiceContainerBuilder extends ContainerBuilder
      */
     public static function create(
         ApplicationPath $applicationPath,
-        bool $installationIsInProgress = false
+        bool $installationIsInProgress = false,
     ): ServiceContainerBuilder {
         return new ServiceContainerBuilder($applicationPath, $installationIsInProgress);
     }

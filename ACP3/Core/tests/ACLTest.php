@@ -29,11 +29,11 @@ class ACLTest extends TestCase
      */
     private $userMock;
     /**
-     * @var MockObject&\ACP3\Core\ACL\Repository\UserRoleRepositoryInterface
+     * @var MockObject&ACL\Repository\UserRoleRepositoryInterface
      */
     private $userRoleRepositoryMock;
     /**
-     * @var MockObject&\ACP3\Core\ACL\PermissionServiceInterface
+     * @var MockObject&PermissionServiceInterface
      */
     private $permissionServiceMock;
 
@@ -158,7 +158,7 @@ class ACLTest extends TestCase
         int $callCountResourceCache,
         int $callCountPermissionsCache,
         array $roleIds,
-        bool $hasAccess
+        bool $hasAccess,
     ): void {
         $this->permissionServiceMock->expects(self::exactly($callCountResourceCache))
             ->method('getResources')

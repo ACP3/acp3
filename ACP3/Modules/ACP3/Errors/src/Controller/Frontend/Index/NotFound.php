@@ -16,7 +16,7 @@ class NotFound extends Core\Controller\AbstractWidgetAction
 {
     public function __construct(
         Context $context,
-        private readonly Steps $breadcrumb
+        private readonly Steps $breadcrumb,
     ) {
         parent::__construct($context);
     }

@@ -20,7 +20,7 @@ class UserMenu extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly UserModelInterface $user,
-        private readonly UserMenuViewProvider $userMenuViewProvider
+        private readonly UserMenuViewProvider $userMenuViewProvider,
     ) {
         parent::__construct($context);
     }

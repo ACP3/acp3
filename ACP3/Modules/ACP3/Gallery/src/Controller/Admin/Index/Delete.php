@@ -19,7 +19,7 @@ class Delete extends Core\Controller\AbstractWidgetAction
         private readonly FormAction $actionHelper,
         private readonly Gallery\Helper\ThumbnailGenerator $thumbnailGenerator,
         private readonly Gallery\Model\GalleryModel $galleryModel,
-        private readonly Gallery\Repository\PictureRepository $pictureRepository
+        private readonly Gallery\Repository\PictureRepository $pictureRepository,
     ) {
         parent::__construct($context);
     }

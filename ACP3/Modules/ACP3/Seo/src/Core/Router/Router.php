@@ -17,7 +17,7 @@ class Router extends \ACP3\Modules\ACP3\System\Core\Router\Router
         private readonly Aliases $aliases,
         RequestInterface $request,
         ApplicationPath $appPath,
-        SettingsInterface $config
+        SettingsInterface $config,
     ) {
         parent::__construct($request, $appPath, $config);
     }

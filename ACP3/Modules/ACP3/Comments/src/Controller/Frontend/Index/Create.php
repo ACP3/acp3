@@ -14,7 +14,7 @@ class Create extends Core\Controller\AbstractWidgetAction
 {
     public function __construct(
         Core\Controller\Context\Context $context,
-        private readonly Comments\ViewProviders\CommentCreateViewProvider $commentCreateViewProvider
+        private readonly Comments\ViewProviders\CommentCreateViewProvider $commentCreateViewProvider,
     ) {
         parent::__construct($context);
     }

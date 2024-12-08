@@ -31,7 +31,7 @@ class NewsModel extends AbstractModel implements UpdatedAtAwareModelInterface
         EventDispatcherInterface $eventDispatcher,
         DataProcessor $dataProcessor,
         private readonly SettingsInterface $config,
-        NewsRepository $newsRepository
+        NewsRepository $newsRepository,
     ) {
         parent::__construct($eventDispatcher, $dataProcessor, $newsRepository);
     }

@@ -20,7 +20,7 @@ class Pics extends Core\Controller\AbstractWidgetAction
         Core\Controller\Context\Context $context,
         private readonly Core\Date $date,
         private readonly Gallery\Repository\GalleryRepository $galleryRepository,
-        private readonly Gallery\ViewProviders\GalleryPictureListViewProvider $galleryPictureListViewProvider
+        private readonly Gallery\ViewProviders\GalleryPictureListViewProvider $galleryPictureListViewProvider,
     ) {
         parent::__construct($context);
     }

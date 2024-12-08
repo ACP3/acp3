@@ -20,7 +20,7 @@ class CreatePost extends Core\Controller\AbstractWidgetAction
         Core\Controller\Context\Context $context,
         private readonly FormAction $actionHelper,
         private readonly Menus\Model\MenusModel $menusModel,
-        private readonly Menus\Validation\MenuFormValidation $menuFormValidation
+        private readonly Menus\Validation\MenuFormValidation $menuFormValidation,
     ) {
         parent::__construct($context);
     }

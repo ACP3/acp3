@@ -27,7 +27,7 @@ class MetaStatementsService extends CoreMetaStatementsService
         RouterInterface $router,
         private readonly Modules $modules,
         private readonly SeoInformationService $seoInformationService,
-        private readonly SettingsInterface $config
+        private readonly SettingsInterface $config,
     ) {
         parent::__construct($request, $router);
     }

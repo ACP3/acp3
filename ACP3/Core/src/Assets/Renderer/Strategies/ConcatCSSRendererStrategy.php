@@ -38,7 +38,7 @@ class ConcatCSSRendererStrategy extends AbstractConcatRendererStrategy implement
         CacheItemPoolInterface $coreCachePool,
         Modules $modules,
         FileResolver $fileResolver,
-        ThemePathInterface $themePath
+        ThemePathInterface $themePath,
     ) {
         parent::__construct($request, $userModel, $assets, $libraries, $appPath, $coreCachePool, $modules, $fileResolver, $themePath);
     }

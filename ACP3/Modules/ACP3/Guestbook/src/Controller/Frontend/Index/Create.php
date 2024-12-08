@@ -14,7 +14,7 @@ class Create extends Core\Controller\AbstractWidgetAction
 {
     public function __construct(
         Core\Controller\Context\Context $context,
-        private readonly Guestbook\ViewProviders\GuestbookCreateViewProvider $guestbookCreateViewProvider
+        private readonly Guestbook\ViewProviders\GuestbookCreateViewProvider $guestbookCreateViewProvider,
     ) {
         parent::__construct($context);
     }

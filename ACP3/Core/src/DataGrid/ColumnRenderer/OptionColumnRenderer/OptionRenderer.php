@@ -26,7 +26,7 @@ class OptionRenderer
         string $translationPhrase,
         string $icon,
         string $iconSelector = '',
-        bool $useAjax = false
+        bool $useAjax = false,
     ): void {
         $ajax = $useAjax === true ? ' data-ajax-form="true"' : '';
         $value = '<li><a href="' . $this->router->route($route) . '" class="dropdown-item"' . $ajax . '>';

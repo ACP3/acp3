@@ -20,7 +20,7 @@ class Pictures extends AbstractWidgetAction
 
     public function __construct(
         Context $context,
-        private readonly GalleryPictureListWidgetViewProvider $galleryPictureListWidgetViewProvider
+        private readonly GalleryPictureListWidgetViewProvider $galleryPictureListWidgetViewProvider,
     ) {
         parent::__construct($context);
     }

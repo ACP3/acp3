@@ -228,7 +228,7 @@ class StorageHelper
         $concurrency = null,
         $partSize = null,
         $acl = null,
-        array $options = []
+        array $options = [],
     ) {
         $args = $this->prepareArgs($options, [
             'concurrency' => $concurrency,

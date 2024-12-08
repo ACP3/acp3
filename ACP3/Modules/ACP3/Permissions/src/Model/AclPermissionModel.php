@@ -26,7 +26,7 @@ class AclPermissionModel extends AbstractModel
         EventDispatcherInterface $eventDispatcher,
         DataProcessor $dataProcessor,
         AclPermissionRepository $repository,
-        private readonly CacheItemPoolInterface $permissionsCachePool
+        private readonly CacheItemPoolInterface $permissionsCachePool,
     ) {
         parent::__construct($eventDispatcher, $dataProcessor, $repository);
     }

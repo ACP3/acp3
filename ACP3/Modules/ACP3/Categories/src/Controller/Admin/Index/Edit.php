@@ -15,7 +15,7 @@ class Edit extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly Categories\Model\CategoriesModel $categoriesModel,
-        private readonly Categories\ViewProviders\AdminCategoryEditViewProvider $adminCategoryEditViewProvider
+        private readonly Categories\ViewProviders\AdminCategoryEditViewProvider $adminCategoryEditViewProvider,
     ) {
         parent::__construct($context);
     }

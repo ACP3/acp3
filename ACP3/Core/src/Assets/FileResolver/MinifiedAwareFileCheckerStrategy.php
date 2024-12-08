@@ -20,7 +20,7 @@ class MinifiedAwareFileCheckerStrategy implements FileCheckerStrategyInterface
         private readonly RequestStack $requestStack,
         private readonly AreaMatcher $areaMatcher,
         private readonly UserModelInterface $userModel,
-        private readonly StraightFileCheckerStrategy $straightFileCheckerStrategy
+        private readonly StraightFileCheckerStrategy $straightFileCheckerStrategy,
     ) {
     }
 

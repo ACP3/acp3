@@ -16,7 +16,7 @@ class Edit extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly UserModelInterface $user,
-        private readonly Users\ViewProviders\AdminUserEditViewProvider $adminUserEditViewProvider
+        private readonly Users\ViewProviders\AdminUserEditViewProvider $adminUserEditViewProvider,
     ) {
         parent::__construct($context);
     }

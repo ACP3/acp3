@@ -29,7 +29,7 @@ class ForgotPwdPost extends Core\Controller\AbstractWidgetAction
         private readonly Users\Model\UsersModel $usersModel,
         private readonly Users\Repository\UserRepository $userRepository,
         private readonly Users\Validation\AccountForgotPasswordFormValidation $accountForgotPasswordFormValidation,
-        private readonly Users\Helpers\SendPasswordChangeEmail $sendPasswordChangeEmail
+        private readonly Users\Helpers\SendPasswordChangeEmail $sendPasswordChangeEmail,
     ) {
         parent::__construct($context);
     }

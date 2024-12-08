@@ -34,7 +34,7 @@ class Modules extends Core\Controller\AbstractWidgetAction
         private readonly Core\Installer\SchemaInstaller $schemaInstaller,
         private readonly Core\Installer\AclInstaller $aclInstaller,
         private readonly AdminModulesViewProvider $adminModulesViewProvider,
-        private readonly CacheClearService $cacheClearService
+        private readonly CacheClearService $cacheClearService,
     ) {
         parent::__construct($context);
     }

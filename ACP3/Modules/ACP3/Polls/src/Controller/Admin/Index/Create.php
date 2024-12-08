@@ -14,7 +14,7 @@ class Create extends Core\Controller\AbstractWidgetAction
 {
     public function __construct(
         Core\Controller\Context\Context $context,
-        private readonly Polls\ViewProviders\AdminPollEditViewProvider $adminPollEditViewProvider
+        private readonly Polls\ViewProviders\AdminPollEditViewProvider $adminPollEditViewProvider,
     ) {
         parent::__construct($context);
     }

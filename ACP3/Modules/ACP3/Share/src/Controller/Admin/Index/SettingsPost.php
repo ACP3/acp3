@@ -20,7 +20,7 @@ class SettingsPost extends Core\Controller\AbstractWidgetAction
         Core\Controller\Context\Context $context,
         private readonly FormAction $actionHelper,
         private readonly Core\Helpers\Secure $secure,
-        private readonly Share\Validation\AdminSettingsFormValidation $adminSettingsFormValidation
+        private readonly Share\Validation\AdminSettingsFormValidation $adminSettingsFormValidation,
     ) {
         parent::__construct($context);
     }

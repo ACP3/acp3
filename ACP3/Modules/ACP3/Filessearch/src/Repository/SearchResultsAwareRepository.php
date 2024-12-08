@@ -22,7 +22,7 @@ class SearchResultsAwareRepository extends \ACP3\Core\Repository\AbstractReposit
 
     public function __construct(
         Connection $db,
-        private readonly Date $date
+        private readonly Date $date,
     ) {
         parent::__construct($db);
     }

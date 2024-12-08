@@ -17,7 +17,7 @@ class Activate extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly FormAction $actionHelper,
-        private readonly Newsletter\Helper\AccountStatus $accountStatusHelper
+        private readonly Newsletter\Helper\AccountStatus $accountStatusHelper,
     ) {
         parent::__construct($context);
     }

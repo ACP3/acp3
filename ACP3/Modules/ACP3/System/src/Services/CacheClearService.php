@@ -27,7 +27,7 @@ class CacheClearService
         ApplicationPath $appPath,
         Psr6Store $httpCacheStore,
         SettingsInterface $settings,
-        LibrariesCache $librariesCache
+        LibrariesCache $librariesCache,
     ) {
         $this->cacheTypes = [
             'general' => [

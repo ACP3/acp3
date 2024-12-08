@@ -15,7 +15,7 @@ class Create extends Core\Controller\AbstractWidgetAction
 {
     public function __construct(
         Context $context,
-        private readonly Emoticons\ViewProviders\AdminEmoticonEditViewProvider $adminEmoticonEditViewProvider
+        private readonly Emoticons\ViewProviders\AdminEmoticonEditViewProvider $adminEmoticonEditViewProvider,
     ) {
         parent::__construct($context);
     }

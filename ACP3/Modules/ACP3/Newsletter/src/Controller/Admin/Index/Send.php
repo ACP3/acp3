@@ -18,7 +18,7 @@ class Send extends Core\Controller\AbstractWidgetAction
         private readonly Core\Helpers\RedirectMessages $redirectMessages,
         private readonly Newsletter\Repository\NewsletterRepository $newsletterRepository,
         private readonly Newsletter\Repository\AccountRepository $accountRepository,
-        private readonly Newsletter\Helper\SendNewsletter $newsletterHelpers
+        private readonly Newsletter\Helper\SendNewsletter $newsletterHelpers,
     ) {
         parent::__construct($context);
     }

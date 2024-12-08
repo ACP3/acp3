@@ -25,7 +25,7 @@ final class LibraryEntity
         private readonly array $css = [],
         private readonly array $js = [],
         string $moduleName = '',
-        private readonly bool $deferrableCss = false
+        private readonly bool $deferrableCss = false,
     ) {
         if (!$moduleName) {
             throw new \InvalidArgumentException('The argument `moduleName` is required!');

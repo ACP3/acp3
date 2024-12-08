@@ -18,7 +18,7 @@ class Activate extends Core\Controller\AbstractWidgetAction
         private readonly ApplicationPath $applicationPath,
         private readonly Core\Helpers\Alerts $alertsHelper,
         private readonly Newsletter\Helper\AccountStatus $accountStatusHelper,
-        private readonly Newsletter\Validation\ActivateAccountFormValidation $activateAccountFormValidation
+        private readonly Newsletter\Validation\ActivateAccountFormValidation $activateAccountFormValidation,
     ) {
         parent::__construct($context);
     }

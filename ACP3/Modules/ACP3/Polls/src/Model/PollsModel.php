@@ -31,7 +31,7 @@ class PollsModel extends AbstractModel implements UpdatedAtAwareModelInterface
         protected Secure $secure,
         PollRepository $pollRepository,
         protected AnswerRepository $answerRepository,
-        protected VoteRepository $voteRepository
+        protected VoteRepository $voteRepository,
     ) {
         parent::__construct($eventDispatcher, $dataProcessor, $pollRepository);
     }

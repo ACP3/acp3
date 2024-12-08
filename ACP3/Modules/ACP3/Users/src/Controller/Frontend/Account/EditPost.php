@@ -22,7 +22,7 @@ class EditPost extends AbstractAction
         private readonly FormAction $actionHelper,
         private readonly UserModelInterface $user,
         private readonly Users\Model\UsersModel $usersModel,
-        private readonly Users\Validation\AccountFormValidation $accountFormValidation
+        private readonly Users\Validation\AccountFormValidation $accountFormValidation,
     ) {
         parent::__construct($context, $user);
     }

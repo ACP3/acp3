@@ -15,7 +15,7 @@ class Edit extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly Guestbook\Model\GuestbookModel $guestbookModel,
-        private readonly Guestbook\ViewProviders\AdminGuestbookEditViewProvider $adminGuestbookEditViewProvider
+        private readonly Guestbook\ViewProviders\AdminGuestbookEditViewProvider $adminGuestbookEditViewProvider,
     ) {
         parent::__construct($context);
     }

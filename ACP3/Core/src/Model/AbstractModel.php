@@ -100,7 +100,7 @@ abstract class AbstractModel
 
     protected function dispatchBeforeSaveEvent(
         AbstractRepository $repository,
-        AbstractModelSaveEvent $event
+        AbstractModelSaveEvent $event,
     ): void {
         $this->dispatchEvent($event);
         $this->dispatchEvent(
@@ -137,7 +137,7 @@ abstract class AbstractModel
         bool $hasDataChanges,
         array $filteredData = [],
         array $rawData = [],
-        ?array $currentData = null
+        ?array $currentData = null,
     ): AbstractModelSaveEvent {
         return new $eventType(
             static::EVENT_PREFIX,
@@ -185,7 +185,7 @@ abstract class AbstractModel
 
     protected function dispatchAfterSaveEvent(
         AbstractRepository $repository,
-        AbstractModelSaveEvent $event
+        AbstractModelSaveEvent $event,
     ): void {
         $this->dispatchEvent($event);
         $this->dispatchEvent(

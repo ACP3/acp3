@@ -22,7 +22,7 @@ class Install extends AbstractAction
         Navigation $navigation,
         private readonly Date $date,
         private readonly DateHelper $dateHelper,
-        private readonly Forms $forms
+        private readonly Forms $forms,
     ) {
         parent::__construct($context, $navigation);
     }

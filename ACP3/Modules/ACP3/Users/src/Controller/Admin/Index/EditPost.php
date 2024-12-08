@@ -29,7 +29,7 @@ class EditPost extends Core\Controller\AbstractWidgetAction
         private readonly UsersModel $usersModel,
         private readonly AdminFormValidation $adminFormValidation,
         private readonly Helpers $permissionsHelpers,
-        private readonly RedirectMessages $redirectMessages
+        private readonly RedirectMessages $redirectMessages,
     ) {
         parent::__construct($context);
     }

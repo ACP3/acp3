@@ -20,7 +20,7 @@ class EditPost extends Core\Controller\AbstractWidgetAction
         Core\Controller\Context\Context $context,
         private readonly FormAction $actionHelper,
         private readonly Comments\Model\CommentsModel $commentsModel,
-        private readonly Comments\Validation\AdminFormValidation $adminFormValidation
+        private readonly Comments\Validation\AdminFormValidation $adminFormValidation,
     ) {
         parent::__construct($context);
     }

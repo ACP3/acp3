@@ -20,7 +20,7 @@ class Result extends Core\Controller\AbstractWidgetAction
         Core\Controller\Context\Context $context,
         private readonly Core\Date $date,
         private readonly Polls\Repository\PollRepository $pollRepository,
-        private readonly Polls\ViewProviders\PollResultViewProvider $pollResultViewProvider
+        private readonly Polls\ViewProviders\PollResultViewProvider $pollResultViewProvider,
     ) {
         parent::__construct($context);
     }

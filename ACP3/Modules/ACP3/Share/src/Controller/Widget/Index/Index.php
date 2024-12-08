@@ -19,7 +19,7 @@ class Index extends AbstractWidgetAction
 
     public function __construct(
         Context $context,
-        private readonly ShareWidgetViewProvider $shareWidgetViewProvider
+        private readonly ShareWidgetViewProvider $shareWidgetViewProvider,
     ) {
         parent::__construct($context);
     }

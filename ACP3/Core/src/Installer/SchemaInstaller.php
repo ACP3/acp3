@@ -17,7 +17,7 @@ class SchemaInstaller extends SchemaHelper implements InstallerInterface
     public function __construct(
         Connection $db,
         ModuleAwareRepositoryInterface $systemModuleRepository,
-        private readonly SettingsAwareRepositoryInterface $systemSettingsRepository
+        private readonly SettingsAwareRepositoryInterface $systemSettingsRepository,
     ) {
         parent::__construct($db, $systemModuleRepository);
     }

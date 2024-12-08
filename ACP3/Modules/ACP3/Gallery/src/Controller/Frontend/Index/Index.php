@@ -20,7 +20,7 @@ class Index extends Core\Controller\AbstractWidgetAction
 
     public function __construct(
         Core\Controller\Context\Context $context,
-        private readonly Gallery\ViewProviders\GalleryListViewProvider $galleryListViewProvider
+        private readonly Gallery\ViewProviders\GalleryListViewProvider $galleryListViewProvider,
     ) {
         parent::__construct($context);
     }

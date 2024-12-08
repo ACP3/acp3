@@ -27,7 +27,7 @@ class InstallPost extends AbstractAction
         private readonly Alerts $alertsHelper,
         Navigation $navigation,
         private readonly InstallModel $installModel,
-        private readonly FormValidation $formValidation
+        private readonly FormValidation $formValidation,
     ) {
         parent::__construct($context, $navigation);
     }

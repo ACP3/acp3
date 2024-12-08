@@ -19,7 +19,7 @@ class ViewProfile extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly Users\ViewProviders\UserProfileViewProvider $userProfileViewProvider,
-        private readonly Users\Repository\UserRepository $userRepository
+        private readonly Users\Repository\UserRepository $userRepository,
     ) {
         parent::__construct($context);
     }

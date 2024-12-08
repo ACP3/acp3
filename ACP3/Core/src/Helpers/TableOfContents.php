@@ -54,14 +54,12 @@ class TableOfContents
     private function getHtmlAttributes(string $string): array
     {
         $matches = [];
-        preg_match_all('/([\w:-]+)[\s]?=[\s]?"([^"]*)"/i', $string, $matches);
+        preg_match_all('/([\w:-]+)\s?=\s?"([^"]*)"/', $string, $matches);
 
         $return = [];
-        if (!empty($matches)) {
-            $cMatches = \count($matches[1]);
-            for ($i = 0; $i < $cMatches; ++$i) {
-                $return[(string) $matches[1][$i]] = (string) $matches[2][$i];
-            }
+        $cMatches = \count($matches[1]);
+        for ($i = 0; $i < $cMatches; ++$i) {
+            $return[(string) $matches[1][$i]] = (string) $matches[2][$i];
         }
 
         return $return;

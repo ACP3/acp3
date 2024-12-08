@@ -21,7 +21,7 @@ class SettingsPost extends Core\Controller\AbstractWidgetAction
         Core\Controller\Context\Context $context,
         private readonly FormAction $actionHelper,
         private readonly Secure $secureHelper,
-        private readonly Guestbook\Validation\AdminSettingsFormValidation $adminSettingsFormValidation
+        private readonly Guestbook\Validation\AdminSettingsFormValidation $adminSettingsFormValidation,
     ) {
         parent::__construct($context);
     }

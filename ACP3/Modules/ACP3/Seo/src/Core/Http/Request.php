@@ -18,7 +18,7 @@ class Request extends BaseRequest
     public function __construct(
         RequestStack $requestStack,
         AreaMatcher $areaMatcher,
-        private readonly SeoRepository $seoRepository
+        private readonly SeoRepository $seoRepository,
     ) {
         parent::__construct($requestStack, $areaMatcher);
     }

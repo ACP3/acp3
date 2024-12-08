@@ -31,7 +31,7 @@ class FileResolver
 
     public function __construct(
         private readonly ApplicationPath $appPath,
-        private readonly ThemePathInterface $theme
+        private readonly ThemePathInterface $theme,
     ) {
     }
 
@@ -62,7 +62,7 @@ class FileResolver
     public function getWebStaticAssetPath(
         string $moduleName,
         string $resourceDirectory = '',
-        string $file = ''
+        string $file = '',
     ): string {
         $path = $this->getStaticAssetPath($moduleName, $resourceDirectory, $file);
 
@@ -78,7 +78,7 @@ class FileResolver
     public function getStaticAssetPath(
         string $moduleName,
         string $resourceDirectory = '',
-        string $file = ''
+        string $file = '',
     ): string {
         if (!empty($resourceDirectory) && !str_ends_with($resourceDirectory, '/')) {
             $resourceDirectory .= '/';

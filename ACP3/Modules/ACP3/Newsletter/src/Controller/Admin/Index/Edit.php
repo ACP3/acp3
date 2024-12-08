@@ -15,7 +15,7 @@ class Edit extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly Newsletter\Model\NewsletterModel $newsletterModel,
-        private readonly Newsletter\ViewProviders\AdminNewsletterEditViewProvider $adminNewsletterEditViewProvider
+        private readonly Newsletter\ViewProviders\AdminNewsletterEditViewProvider $adminNewsletterEditViewProvider,
     ) {
         parent::__construct($context);
     }

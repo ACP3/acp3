@@ -15,7 +15,7 @@ class Edit extends Core\Controller\AbstractWidgetAction
     public function __construct(
         Core\Controller\Context\Context $context,
         private readonly Seo\Model\SeoModel $seoModel,
-        private readonly Seo\ViewProviders\AdminSeoEditViewProvider $adminSeoEditViewProvider
+        private readonly Seo\ViewProviders\AdminSeoEditViewProvider $adminSeoEditViewProvider,
     ) {
         parent::__construct($context);
     }

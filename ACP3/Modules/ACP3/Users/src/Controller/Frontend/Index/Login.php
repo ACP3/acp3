@@ -20,7 +20,7 @@ class Login extends Core\Controller\AbstractWidgetAction
         private readonly ApplicationPath $applicationPath,
         private readonly UserModelInterface $user,
         private readonly Core\Http\RedirectResponse $redirectResponse,
-        private readonly Users\ViewProviders\LoginViewProvider $loginViewProvider
+        private readonly Users\ViewProviders\LoginViewProvider $loginViewProvider,
     ) {
         parent::__construct($context);
     }

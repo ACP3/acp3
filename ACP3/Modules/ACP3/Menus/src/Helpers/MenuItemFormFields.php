@@ -43,7 +43,7 @@ class MenuItemFormFields
         int $parentId = 0,
         int $leftId = 0,
         int $rightId = 0,
-        int $displayMenuItem = 1
+        int $displayMenuItem = 1,
     ): array {
         return [
             'blocks' => $this->menusDropDown($blockId),

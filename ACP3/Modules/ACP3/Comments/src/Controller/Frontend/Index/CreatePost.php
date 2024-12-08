@@ -23,7 +23,7 @@ class CreatePost extends Core\Controller\AbstractWidgetAction
         private readonly Core\Modules $modules,
         private readonly UserModelInterface $user,
         private readonly Comments\Model\CommentsModel $commentsModel,
-        private readonly Comments\Validation\FormValidation $formValidation
+        private readonly Comments\Validation\FormValidation $formValidation,
     ) {
         parent::__construct($context);
     }

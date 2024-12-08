@@ -20,7 +20,7 @@ class Duplicate extends AbstractWidgetAction
     public function __construct(
         Context $context,
         private readonly FormAction $actionHelper,
-        private readonly NewsModel $newsModel
+        private readonly NewsModel $newsModel,
     ) {
         parent::__construct($context);
     }

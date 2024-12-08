@@ -23,7 +23,7 @@ class UnsubscribePost extends Core\Controller\AbstractWidgetAction
         private readonly FormAction $actionHelper,
         private readonly Core\Helpers\Alerts $alertsHelper,
         private readonly Newsletter\Helper\AccountStatus $accountStatusHelper,
-        private readonly Newsletter\Validation\UnsubscribeFormValidation $unsubscribeFormValidation
+        private readonly Newsletter\Validation\UnsubscribeFormValidation $unsubscribeFormValidation,
     ) {
         parent::__construct($context);
     }

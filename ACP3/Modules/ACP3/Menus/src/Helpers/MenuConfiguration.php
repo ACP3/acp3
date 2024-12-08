@@ -19,7 +19,7 @@ class MenuConfiguration implements \Stringable
         private readonly string $dropdownWrapperTag = 'li',
         private readonly string $linkSelector = '',
         private readonly string $inlineStyle = '',
-        private readonly string $headlineSelector = ''
+        private readonly string $headlineSelector = '',
     ) {
     }
 

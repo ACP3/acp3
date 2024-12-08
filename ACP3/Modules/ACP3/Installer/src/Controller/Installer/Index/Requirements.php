@@ -16,7 +16,7 @@ class Requirements extends AbstractAction
     public function __construct(
         Context $context,
         Navigation $navigation,
-        private readonly RequirementsHelper $requirementsHelpers
+        private readonly RequirementsHelper $requirementsHelpers,
     ) {
         parent::__construct($context, $navigation);
     }

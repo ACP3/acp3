@@ -21,7 +21,7 @@ class OrderPost extends AbstractWidgetAction
         Context $context,
         private readonly RedirectResponse $redirectResponse,
         private readonly PictureRepository $pictureRepository,
-        private readonly PictureModel $pictureModel
+        private readonly PictureModel $pictureModel,
     ) {
         parent::__construct($context);
     }

@@ -105,6 +105,6 @@ trait SortingAwareTrait
         bool $hasDataChanges,
         array $filteredData = [],
         array $rawData = [],
-        ?array $currentData = null
+        ?array $currentData = null,
     ): AbstractModelSaveEvent;
 }

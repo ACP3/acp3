@@ -15,7 +15,7 @@ class UpdateCheck extends Core\Controller\AbstractWidgetAction
 {
     public function __construct(
         Context\Context $context,
-        private readonly System\Helper\UpdateCheck $updateCheck
+        private readonly System\Helper\UpdateCheck $updateCheck,
     ) {
         parent::__construct($context);
     }

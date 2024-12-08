@@ -23,7 +23,7 @@ class Download extends Core\Controller\AbstractWidgetAction
         private readonly Core\Date $date,
         private readonly Core\Http\RedirectResponse $redirectResponse,
         private readonly Core\Helpers\StringFormatter $stringFormatter,
-        private readonly Files\Repository\FilesRepository $filesRepository
+        private readonly Files\Repository\FilesRepository $filesRepository,
     ) {
         parent::__construct($context);
     }

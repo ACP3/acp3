@@ -29,7 +29,7 @@ class Steps extends CoreSteps
         RequestInterface $request,
         RouterInterface $router,
         EventDispatcherInterface $eventDispatcher,
-        protected readonly MenuItemRepository $menuItemRepository
+        protected readonly MenuItemRepository $menuItemRepository,
     ) {
         parent::__construct($container, $translator, $request, $router, $eventDispatcher);
     }

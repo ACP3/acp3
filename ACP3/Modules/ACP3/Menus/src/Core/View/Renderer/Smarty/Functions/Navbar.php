@@ -28,7 +28,7 @@ class Navbar extends AbstractFunction
         private readonly RequestInterface $request,
         private readonly RouterInterface $router,
         private readonly MenuItemRepository $menuItemRepository,
-        private readonly MenuServiceInterface $menuService
+        private readonly MenuServiceInterface $menuService,
     ) {
     }
 

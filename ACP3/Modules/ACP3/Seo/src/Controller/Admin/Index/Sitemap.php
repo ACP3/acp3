@@ -19,7 +19,7 @@ class Sitemap extends AbstractWidgetAction
     public function __construct(
         Context $context,
         private readonly RedirectMessages $redirectMessages,
-        private readonly SitemapGenerationModel $sitemapGenerationModel
+        private readonly SitemapGenerationModel $sitemapGenerationModel,
     ) {
         parent::__construct($context);
     }

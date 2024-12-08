@@ -20,7 +20,7 @@ class Index extends AbstractWidgetAction
         Context $context,
         private readonly ACL $acl,
         private readonly MenuRepository $menuRepository,
-        private readonly MenuItemsDataGridViewProvider $menuItemsDataGridViewProvider
+        private readonly MenuItemsDataGridViewProvider $menuItemsDataGridViewProvider,
     ) {
         parent::__construct($context);
     }

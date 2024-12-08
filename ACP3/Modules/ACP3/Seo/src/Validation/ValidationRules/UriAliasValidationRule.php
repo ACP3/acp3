@@ -18,7 +18,7 @@ class UriAliasValidationRule extends AbstractValidationRule
     public function __construct(
         private readonly InternalUriValidationRule $internalUriValidationRule,
         private readonly UriSafeValidationRule $uriSafeValidationRule,
-        private readonly SeoRepository $seoRepository
+        private readonly SeoRepository $seoRepository,
     ) {
     }
 

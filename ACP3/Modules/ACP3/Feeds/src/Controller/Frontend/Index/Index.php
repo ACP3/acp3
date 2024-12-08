@@ -20,7 +20,7 @@ class Index extends Core\Controller\AbstractWidgetAction
         Core\Controller\Context\Context $context,
         private readonly Core\ACL $acl,
         private readonly Feeds\View\Renderer\FeedGenerator $feedGenerator,
-        private readonly Feeds\Utility\FeedAvailabilityRegistrar $availableFeedsRegistrar
+        private readonly Feeds\Utility\FeedAvailabilityRegistrar $availableFeedsRegistrar,
     ) {
         parent::__construct($context);
     }

@@ -24,7 +24,7 @@ class BackendManagerFactory
         private readonly ClientInterface $client,
         private readonly CacheItemPoolInterface $servicesCacheItemPool,
         private readonly SocialSharingBackendServiceLocator $serviceLocator,
-        private readonly SocialServices $socialServices
+        private readonly SocialServices $socialServices,
     ) {
     }
 

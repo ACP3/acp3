@@ -10,7 +10,7 @@ namespace ACP3\Modules\ACP3\Seo\Core\Router;
 class RouterTest extends \ACP3\Modules\ACP3\System\Core\Router\RouterTest
 {
     /**
-     * @var \PHPUnit\Framework\MockObject\MockObject&\ACP3\Modules\ACP3\Seo\Core\Router\Aliases
+     * @var \PHPUnit\Framework\MockObject\MockObject&Aliases
      */
     private $aliasesMock;
 

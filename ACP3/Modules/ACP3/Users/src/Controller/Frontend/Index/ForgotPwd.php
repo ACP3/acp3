@@ -20,7 +20,7 @@ class ForgotPwd extends Core\Controller\AbstractWidgetAction
         private readonly ApplicationPath $applicationPath,
         private readonly UserModelInterface $user,
         private readonly Core\Http\RedirectResponse $redirectResponse,
-        private readonly Users\ViewProviders\ForgotPasswordViewProvider $forgotPasswordViewProvider
+        private readonly Users\ViewProviders\ForgotPasswordViewProvider $forgotPasswordViewProvider,
     ) {
         parent::__construct($context);
     }

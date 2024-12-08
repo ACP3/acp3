@@ -22,7 +22,7 @@ class Aliases
 
     public function __construct(
         Core\Modules $modules,
-        private readonly SeoInformationService $seoInformationService
+        private readonly SeoInformationService $seoInformationService,
     ) {
         $this->isActive = $modules->isInstalled(Seo\Installer\Schema::MODULE_NAME);
     }
